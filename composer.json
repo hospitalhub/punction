@@ -36,9 +36,6 @@
 	"repositories" : [{
 			"type" : "composer",
 			"url" : "http://wpackagist.org"
-		}, {
-			"type" : "vcs",
-			"url" : "https://wsz.git.cloudforge.com/hospitalplugin.git"
 		}
 	]
 }
