@@ -1,0 +1,24 @@
+<configuration xmlns="http://logging.apache.org/log4php/">
+
+	<appender name="myConsoleAppender" class="LoggerAppenderConsole">
+		<layout class="LoggerLayoutPattern">
+			<param name="conversionPattern" value="%date [%logger] %message%newline" />
+		</layout>
+	</appender>
+
+	<appender name="myFileAppender" class="LoggerAppenderFile">
+		<layout class="LoggerLayoutPattern">
+			<param name="conversionPattern" value="%date [%logger] %message%newline" />
+		</layout>
+		<param name="file" value="log/migration.log" />
+	</appender>
+
+	<logger name="migration">
+		<appender_ref ref="myFileAppender" />
+	</logger>
+	
+	<root>
+		<level value="DEBUG" />
+		<appender_ref ref="myConsoleAppender" />
+	</root>
+</configuration>

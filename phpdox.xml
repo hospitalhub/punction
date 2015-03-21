@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpdox xmlns="http://phpdox.net/config">
+	<project name="punction" source="src" workdir="build/phpdox">
+		<collector publiconly="false" >
+			<include mask="*.php" />
+		</collector>
+		<generator output="build">
+			<build engine="html" output="api" enabled="true">
+				<file extension="html" />
+			</build>
+		</generator>
+	</project>
+</phpdox>

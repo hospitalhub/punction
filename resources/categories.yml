@@ -1,0 +1,329 @@
+ZZ:
+   Aktywność fizyczna:
+    1: pacjent samodzielny
+    2: chodzenie z laską, chodzikiem, wymaga małej pomocy przy wstawaniu z łóżka, zejściu z fotela, większą część czasu spędza w łóżku
+    3: pacjent nie opuszcza łóżka, może sam lub przy pomocy pielęgniarki zmieniać pozycję, transport tylko na noszach lub windą, W oddziałach chirurgicznych - opieka w pierwszej dobie po zabiegu operacyjnym
+   Higiena :
+    1: we własnym zakresie
+    2: większość czynności wykonuje samodzielnie, niewielka pomoc przy wykonywaniu toalety, wejściu do wanny, umyciu pleców, czasem włosów
+    3: wymaga pomocy przy wykonywaniu wszystkich czynności higienicznych, zmianie bielizny pościelowej i wzmożona pielęgnacja skóry, postępowanie p/odleż. osobistej, mycie w łóżku, pomoc w toalecie jamy ustnej,
+   Odżywianie:
+    1: samodzielnie bez diety 
+    2: niewielka pomoc, podanie tacy, i/lub rozdrobnienie posiłku, dieta 
+    3: wymaga karmienia, rozdrobnienia posiłku, często odżywianie i nawadnianie pozajelitowe
+   Wydalanie:
+    1: samodzielnie
+    2: wymaga pomocy w zaprowadzeniu do WC
+    3: przeważnie sygnalizuje swoje potrzeby, korzysta z basenu, kaczki, często ma założony cewnik, może pieluchomajtek, bardzo rzadko się zanieczyszcza występować biegunka, sporadycznie korzysta
+   Pomiar objawów życiowych:
+    1: podstawowe parametry 2 x dobę
+    2: podstawowe parametry mierzone częściej niż 2 x dobę, wykonywanie innych zabiegów np. mierzenie RR, prowadzenie bilansu płynów, oznaczenie masy ciała itp.
+    3: Parametry fizjologiczne mierzone częściej niż 2 x dobę, założenie kart obserwacji,prowadzony bilans płynów, pobieranie próbek krwi, moczu, i innych wydzielin częściej niż 2 x dobę.
+   Leczenie :
+    1: doustne, sporadycznie dożylne, podskórne (np. premedykacja,) domięsniowo, podanie kropli do oczu, uszu, leczenie skóry- maści, zasypki stosowane samodzielnie
+    2: doustne, domięśniowo, dożylnie, w oddziałach zabiegowych wykonywanie opatrunków 2 x, w oddz. dermatologicznych kąpiele, pędzlowanie skóry, zawijanie stosowanie maści zasypek 2 x dobę
+    3: domięśniowe, dożylne , wlewy dożylne i doodbytnicze, zmiana opatrunku częściej niż 2 x dobę, odsysanie wydzieliny z rany pooperacyjnej, kąpiele lecznicze, pędzlowanie skóry, stosowanie maści, zasypek częściej niż 2 x dobę
+   Edukacja i wsparcie psychiczne:
+    1: pełna wiedza na temat zdrowia i choroby, wymaga podstawowych informacji o oddziale, (topografia, rozkład dnia w oddziale, uprawnienia pacjenta, nazwiska osób opiekujących się, planowane postępowanie pielęgnacyjne) nie wymaga wsparcia psychicznego
+    2: słaba orientacja w sprawach zdrowia, wymaga informacji o zdrowiu i chorobie oraz wsparcia psychicznego, manifestuje pewien poziom lęku, nastrój nieco obniżony
+    3: brak wiedzy o zdrowiu i chorobie, wymaga informacji oraz wsparcia psychicznego, często wysoki poziom lęku, zdezorientowany, nastrój depresyjny, rodzina pacjenta powinna być objęta programem edukacyjnym i wsparciem psychicznym
+PSY:
+   Aktywność Fizyczna:
+    1: pacjent samodzielny
+    2: porusza się przy pomocy laski, chodzika, wymaga pomocy przy wstaniu z łóżka, z fotela, większą część czasu spędza w łóżku
+    3: nie opuszcza łóżka, pozycję zmienia sam lub przy pomocy pielęgniarki, transport na wózku lub noszach
+   Higiena:
+    1: we własnym zakresie
+    2: większość czynności wykonuje samodzielnie, niewielka pomoc przy wykonywaniu toalety, wejściu do wanny, pod prysznic, wymaga pomocy przy umyciu pleców, włosów
+    3: wymaga pomocy przy wykonywaniu wszystkich czynności higienicznych, zmianie bielizny pościelowej i osobistej, mycie w łóżku, pomoc w toalecie jamy ustnej, wzmożona pielęgnacja skóry w szczególności postępowanie przeciwodleżynowe
+   Odżywianie:
+    1: samodzielnie
+    2: niewielka pomoc, podanie tacy lub rozdrobnienie posiłku, nadzór nad ilością spożywanego posiłku
+    3: wymaga karmienia, rozdrobnienia posiłku lub odżywiany jest i nawadniany pozajelitowo 
+   Wydalanie:
+    1: samodzielnie
+    2: wymaga pomocy w zaprowadzeniu do toalety
+    3: przeważnie sygnalizuje swoje potrzeby, korzysta z basenu, kaczki, często ma założony cewnik, może występować biegunka, korzysta  z pieluchomajtek 
+   Pomiar Parametrów Życiowych:
+    1: podstawowe parametry mierzone 2 x na dobę
+    2: podstawowe parametry mierzone częściej niż 2 x dobę, wykonywanie innych zabiegów np. prowadzenie bilansu płynów, kontrola masy ciała itp.
+    3: kontrola stanu fizycznego osoby unieruchomionej lub izolowanej nie rzadziej niż co 15 minut oraz dokumentowanie ww. obserwacji w kartach zastosowania unieruchomienia i izolacji 
+   Leczenie :
+    1: doustne, sporadycznie dożylne, domięśniowe, pod inną postacią niż doustne, leki, przyjmuje bez oporów
+    2: doustne, domięśniowe, ewentualnie dożylne, okresowo odmawia przyjmowania leków, niewielkie nasilenie objawów ubocznych polekowych
+    3: domięśniowe, dożylne, podskórne, wlewy dożylne i doodbytnicze, oponuje przeciwko leczeniu, wymaga interwencji osób trzecich przy podawaniu leków lub przy wykonywaniu zabiegów, występują ciężkie objawy uboczne, polekowe np. złośliwy zespół neuroleptyczny
+   Edukacja I Wsparcie Psychiczne:
+    1: pełna wiedza na temat zdrowia i choroby, wymaga podstawowych informacji o oddziale (topografia, rozkład dnia w oddziale, uprawnienia pacjenta, nazwiska osób opiekujących się, planowane postępowanie pielęgnacyjne)
+    2: słaba orientacja w sprawach zdrowia, wymaga informacji o zdrowiu i chorobie oraz wsparcia psychicznego, manifestuje pewien poziom lęku, wymaga oddziaływań psychoedukacyjnych
+    3: brak wiedzy o zdrowiu i chorobie, wymaga informacji oraz wsparcia psychicznego, często wysoki poziom lęku, zdezorientowany, nastrój depresyjny; pacjent i jego rodzina wymagają wsparcia i podjęcia działań psychoedukacyjnych
+   Zachowania Agresywne:
+    1: spokojny, bez słownych i czynnych zachowań agresywnych
+    2: agresja słowna w stosunku do pacjentów i personelu
+    3: agresja słowna i czynna w stosunku do pacjentów i personelu, niszczenie sprzętów w oddziale, autoagresja, nadmierne pobudzenie seksualne
+   Dezorganizacja Zachowania:
+    1: brak
+    2: niewielka dezorganizacja zachowania bez wpływu na podstawowe czynności życiowe
+    3: nasilona dezorganizacja zachowania 
+   Napęd Psychoruchowy:
+    1: prawidłowy
+    2: okresowo niepokój ruchowy, głośno mówi, śpiewa, nastrój labilny, dysforia, euforia lub porusza się powoli, zastyga, halucynuje wzrokowo i słuchowo, powolny, siedzi bezczynnie lub staje nieruchomo, odpowiada cicho, szeptem lub wcale, nastrój obojętny, sztywna mimika twarzy
+    3: nadmiernie aktywny, pobudzony psychoruchowo, dysforyczny, stale przemieszcza się w oddziale, domaga się wyjścia poza oddział, głośno mówi, krzyczy, płacze, szarpie się (pacjent unieruchomiony), zaczepia innych, niszczy ubranie, okalecza się, rzuca przedmiotami, całkowity bezruch (stupor)
+   Depresja:
+    1: bezsenność lub nadmierna senność, lęk
+    2: obniżenie nastroju i napędu psychoruchowego, zaburzenia snu, lęk okresowy lub przewlekły, dysregulacja rytmów biologicznych, układu autonomicznego (zaburzenia snu, lęk, zaparcia, bóle głowy), wewnętrzny niepokój, drażliwość
+    3: aktywność fizyczna i psychiczna obniżona, uboga mimika twarzy, zaniedbany wygląd, nie reaguje na próby nawiązania kontaktu, nie odpowiada na pytania, odmawia przyjmowania posiłków i płynów
+   Myśli Samobójcze:
+    1: brak
+    2: wypowiada myśli samobójcze, ale nie ma tendencji do ich realizacji
+    3: po próbie samobójczej, wypowiada myśli samobójcze, ma tendencje do ich realizacji, w wywiadzie próby samobójcze, wymaga stałej obserwacji pielęgniarskiej
+   Objawy Psychotyczne:
+    1: brak lub niewielkie
+    2: umiarkowane nasilenie bez aktywności psychotycznej
+    3: ciężkie, masywne objawy wytwórcze z nasiloną aktywnością psychotyczną
+   Świadomość:
+    1: świadomość prawidłowa
+    2: senny, na zadawane pytania odpowiada z opóźnieniem, zdezorientowany w czasie
+    3: dezorientacja, przymglenie, majaczenie, splątanie
+   Udział W Terapii:
+    1: chętnie uczestniczy w zajęciach terapeutycznych 
+    2: okresowo uczestniczy w zajęciach terapeutycznych, nie kończy podjętych zadań
+    3: nie uczestniczy w życiu społeczności i terapii zajęciowej
+POR:
+   1. I okres porodu:
+    1: Ciąża >37 Hbd; płód pojedynczy, żywy, położenie podłużne- główkowe
+    2: Ciąża >32 <37 Hbd i powyżej 40 Hbd; ciąża bliźniacza lub pojedyncza położenie nieprawidłowe
+    3: Ciąża <32 Hbd, ciąża mnoga, położenie płodu nieprawidłowe lub ciąża martwa
+   2. I okres porodu:
+    1: Przebieg ciąży prawidłowy bez dolegliwości ze strony innych układów
+    2: Wywiad położniczy obciążony, w tej lub poprzednich ciążach
+    3: Wywiad położniczy obciążony lub choroby innych układów
+   3. I okres porodu:
+    1: Pozycja dowolna, rodząca chodzi 
+    2: Pozycja częściowo ograniczona
+    3: Rodząca leżąca 
+   4. I okres porodu:
+    1: Pełna samodzielność w zakresie czynności higienicznych
+    2: Wymaga pomocy  w toalecie ciała, szczególnie higiena krocza
+    3: Wymaga stałej pomocy w utrzymaniu higieny ciała
+   5. I okres porodu:
+    1: Dieta lekkostrawna, płyny wg potrzeb
+    2: Dieta płynna  z ograniczeniami
+    3: Dieta ścisła
+   6. I okres porodu:
+    1: Rutynowy pomiar parametrów życiowych
+    2: Pomiar parametrów życiowych co 2 godziny
+    3: Pomiar parametrów życiowych co 15 minut (karta obserwacji)
+   7. I okres porodu:
+    1: Rutynowa kontrola akcji serca płodu (monitorowanie dłuższe przy przyjęciu rodzącej do oddziału)
+    2: Okresowe monitorowanie ASP (dodatkowo)
+    3: Stałe monitorowanie ASP
+   8. I okres porodu:
+    1: Postęp porodu prawidłowy, do 8 godzin 
+    2: Zaburzenia w postępie porodu lub planowane ciecie cesarskie 
+    3: Zaburzenia czynności skurczowej macicy, brak postępu porodu lub nagle cięcie cesarskie
+   9. I okres porodu:
+    1: Potrzeby wydalania zaspokaja sama
+    2: Wymaga podania basenu
+    3: Cewnikowanie lub cewnik na stałe
+   10. I okres porodu:
+    1: Zachowany pęcherz płodowy, pęknięcie o czasie
+    2: Pęknięty pęcherz płodowy, odpływa prawidłowy płyn owodniowy
+    3: Odpływa płyn owodniowy o nieprawidłowym zabarwieniu i woni lub w dużej ilość
+   11. I okres porodu:
+    1: Rodząca stosuje ćwiczenia oddechowe, relaksujące, korzysta z udogodnień
+    2: Rodząca wymaga instruktażu odnośnie ćwiczeń oddechowych i relaksujących
+    3: Rodząca wymaga stałej pomocy w stosowaniu ćwiczeń oddechowych i relaksujących
+   12. I okres porodu:
+    1: Otrzymuje leki doustne, doodbytnicze, domięśniowe
+    2: Otrzymuje leki doustne, doodbytnicze, domięśniowe, dożylne
+    3: Otrzymuje leki parenteralnie, infuzja (dożylnie)
+   13. I okres porodu:
+    1: Pozytywne nastawienie rodzącej do porodu, dobra orientacja co do przebiegu porodu, dobry kontakt z położną, rodząca jest spokojna  i opanowana
+    2: Mierna orientacja co do przebiegu porodu, utrudniony kontakt z położną, rodząca nieopanowana, niespokojna, wymaga okresowego wsparcia osoby towarzyszącej
+    3: Negatywny stosunek do porodu i osób towarzyszących, brak orientacji w przebiegu porodu, wymaga stałej obecności położnej
+   1. II okres porodu:
+    1: Czas przebiegu do 2 godzin 
+    2: Przedłużajacy się ponad 2 godziny
+    3: Poród zabiegowy, nagłe cięcie cesarskie
+   2. II okres porodu:
+    1: Podczas parcia pozycja dowolna
+    2: Podczas parcia pozycja ograniczona
+    3: Podczas parcia pozycja wymuszona
+   3. II okres porodu:
+    1: Wymaga zapewnienia czystości krocza 
+    2: Wymaga zapewnienia czystości krocza 
+    3: Wymaga zapewnienia czystości krocza i okolic przylegających
+   4. II okres porodu:
+    1: Ochrona krocza 
+    2: Znieczulenie, nacięcie krocza
+    3: Pęknięcie krocza, rozlegle nacięcie
+   5. II okres porodu:
+    1: Rodząca aktywnie uczestniczy w porodzie
+    2: Rodząca wymaga nauki, pomocy przy parciu
+    3: Rodząca wymaga aktywnej pomocy, biernie uczestniczy w porodzie
+   6. II okres porodu:
+    1: 6. Zastosowanie mają pkt 4–7,9, 12 i 13 dotyczące I okresu porodu
+    2: 6. Zastosowanie mają pkt 4–7, 9, 12 i 13 dotyczące I okresu porodu
+    3: 6. Zastosowanie mają pkt 4–7, 9, 12 i 13 dotyczące I okresu porodu
+   1. III okres porodu:
+    1: Noworodek w skali Apgar 7–10 pkt
+    2: Noworodek w skali Apgar 4–6 pkt
+    3: Noworodek w skali Apgar 0–3 pkt
+   2. III okres porodu:
+    1: Waga noworodka 2500-4000 g 
+    2: Waga noworodka poniżej 2500 g lub powyżej 4000 g 
+    3: Waga noworodka poniżej 1500 g, wady u noworodka, martwo urodzony lub umierający po porodzie
+   3. III okres porodu:
+    1: 3. Bardzo dobry kontakt matki z noworodkiem
+    2: 3. Kontakt matki z noworodkiem zaburzony, matka obojętna 
+    3: 3. Brak kontaktu lub niechęć matki do noworodka
+   4. III okres porodu:
+    1: 4.Bierne i czynne prowadzenie III okresu porodu, popłód kompletny
+    2: 4. Czynne prowadzenie III okresu porodu; wątpliwości w ocenie popłodu
+    3: 4. Patologia III okresu porodu, zabiegi manualne lub instrumentalne
+   5. III okres porodu:
+    1: 5. Krwawienie z dróg rodnych do 200 ml
+    2: 5. Krwawienie z dróg rodnych powyżej 200 ml
+    3: 5. Krwotok z dróg rodnych
+   6. III okres porodu:
+    1: 6. Kanał rodny bez obrażeń
+    2: 6. Otarcia, pęknięcia kanału rodnego, nacięcie krocza
+    3: 6. Pęknięcie krocza II lub III stopnia
+   7. III okres porodu:
+    1: 7. Zastosowanie mają pkt 4–6, 9, 12 i 13 dotyczące I okresu porodu
+    2: 7. Zastosowanie mają pkt 4–6, 9, 12 i 13 dotyczące I okresu porodu
+    3: 7. Zastosowanie mają pkt 4–6, 9, 12 i 13 dotyczące I okresu porodu
+   1. IV okres porodu:
+    1: Skrócony czas przebywania na sali porodowej
+    2: Dwugodzinna obserwacja
+    3: Obserwacja powyżej 2 godzin
+   2. IV okres porodu:
+    1: Rutynowy pomiar parametrów życiowych, wysokości dna macicy, krwawienia z dróg rodnych
+    2: Pomiar parametrów życiowych co 15 min., kontrola wysokości dna macicy i krwawienia z dróg rodnych (krwawienie zwiększone)
+    3: Opieka po znieczuleniu ogólnym, dokładna obserwacja i pomiar parametrów życiowych, wysokości dna macicy i krwawienia z dróg rodnych
+   3. IV okres porodu:
+    1: Matka karmi dziecko piersią 
+    2: Matka wymaga pomocy w przystawieniu dziecka do piersi
+    3: Matka nie karmi dziecka piersią, zły kontakt z dzieckiem lub brak
+   4. IV okres porodu:
+    1: Dobra orientacja matki w sprawach zdrowia, samopielęgnacji w połogu, opieki nad dzieckiem, dobry kontakt z otoczeniem
+    2: Matka wymaga pomocy w spożyciu posiłku, wymaga informacji  o samopielęgnacji  w połogu, pielęgnacji noworodka, wymaga wsparcia osób bliskich
+    3: Brak orientacji matki w sprawach zdrowotnych, wymaga wsparcia psychicznego  ze strony położnej
+POL:
+   Aktywność fizyczna:
+    1: ciąża pojedyncza, poród fizjologiczny bez nacięcia krocza lub z niewielkim pęknięciem I°, ciąża przebiegała bez powikłań, ukończona w terminie porodu, położnica chodząca
+    2: ciąża mnoga – bliźnięta, poród z nacięciem i rozległym uszkodzeniem krocza, zabiegowy; ciąża o podwyższonym ryzyku, zakończona przed lub po upływie terminu porodu; przebieg porodu był częściowo zaburzony, nacięcie lub pęknięcie krocza II°, położnica większą część czasu spędza w łóżku
+    3: ciąża mnoga – troje lub więcej dzieci, ukończona cięciem cesarskim, interwencja w jamie macicy, w związku z krwotokiem poporodowym, uszkodzenie spojenia łonowego;  ciąża wysokiego ryzyka, pęknięcie krocza III°, położnica leżąca, nie opuszcza łóżka, może sama zmieniać pozycję
+   Higiena:
+    1: położnica wykonuje samodzielnie czynności higieniczne, kąpiel  i toaletę noworodka wykonuje przy pomocy położnej
+    2: wymaga wykonania toalety krocza lub wykonuje samodzielnie, lecz wymaga pomocy położnej podczas kąpieli pod natryskiem;  u noworodka wykonuje tylko niektóre czynności higieniczno-pielęgnacyjne, wymaga pomocy i nadzoru ze strony położnej
+    3: wymaga toalety całego ciała, pielęgnacją noworodka zajmuje się położna
+   Odżywianie:
+    1: położnica wymaga diety dla matki karmiącej, samodzielnie spożywa posiłki
+    2: położnica wymaga diety dla matki karmiącej lub połączonej ze specjalną dietą w związku  z chorobami współistniejącymi, wymaga pomocy  w spożywaniu posiłków (pokrojenie, rozdrobnienie)
+    3: położnica ma dietę półpłynną lub wymaga pomocy przy spożywaniu np. podanie pokarmu, pojniczka lub odżywiana jest parenteralnie
+   Wydalanie:
+    1: położnica sama zaspokaja potrzebę wydalania, czynność pęcherza moczowego i jelit prawidłowa
+    2: położnica ma trudności z oddawaniem moczu, wymaga prowokacji, istnieją trudności  z oddawaniem stolca (zaparcia)
+    3: położnica ma trudności z oddawaniem moczu – wymaga cewnikowania lub ma założony cewnik, prowadzona jest karta kontroli przyjmowanych i wydalanych płynów, istnieją trudności z oddawaniem stolca
+   Pomiar parametrów życiowych:
+    1: podstawowe parametry (temperatura, tętno), wysokość dna macicy, kontrola krwawienia, odchodów, stan krocza – pomiar i obserwacja 2 x na dobę
+    2: podstawowe parametry (temperatura, tętno), wysokość dna macicy, kontrola krwawienia, odchodów, stan krocza – pomiar i obserwacja częściej niż 2 x na dobę oraz dodatkowo pomiar ciśnienia tętniczego krwi 
+    3: prowadzona jest karta ścisłej obserwacji
+   Leczenie:
+    1: nie wymaga podawania leków
+    2: otrzymuje leki doustnie, domięśniowo, podskórnie, doodbytniczo
+    3: otrzymuje leki dożylnie, ma podłączoną kroplówkę, może być przetaczana krew
+   Edukacja zdrowotna i wsparcie psychiczne:
+    1: położnica zna zasady pielęgnacji noworodka, karmienia piersią  i zdrowego stylu życia w okresie połogu, nie wymaga wsparcia psychicznego, ma dobry kontakt z dzieckiem, chętnie karmi piersią
+    2: położnica ma słabą orientację na temat pielęgnacji noworodka, karmienia piersią i zdrowego stylu życia w okresie połogu, wymaga wsparcia położnej i osób bliskich, nie jest przekonana do karmienia piersi
+    3: położnica nie zna zasad pielęgnacji noworodka, nie jest przekonana do karmienia piersią i nie zna techniki karmienia oraz zasad zdrowego stylu życia w okresie połogu, wymaga edukacji w tym zakresie, brak kontaktu z dzieckiem, wymaga profesjonalnego wsparcia psychicznego (dziecko urodzone w stanie ciężkim, z wadą lub zmarło)
+NOW:
+   Masa Urodzeniowa :
+    1: 2501 – 4000 g
+    2: 2000 – 2500 g lub > 4000 g
+   Skala Apgar :
+    1: 8 – 10 pkt
+    2: 5 – 7 pkt
+   Urazy Poporodowe:
+    1: nie ma
+    2: krwiak zewnątrzczaszkowy, wybroczyny na skórze, złamanie obojczyka, porażenie splotu barkowego
+   Wady Wrodzone:
+    1: nie ma
+    2: wady układu kostno – stawowego, wady twarzoczaszki, układu nerwowego, wady serca, inne wady wrodzone na etapie diagnozy nie wymagające natychmiastowej interwencji chirurgicznej
+   Higiena I Pielęgnacja:
+    1: codzienna kąpiel noworodka, pielęgnacja kikuta pępowinowego wykonywana przez położne, matka wykonuje samodzielnie toaletę noworodka podczas przewijania, skóra i śluzówki bez zmian patologicznych
+    2: toaleta krótkotrwała, pojedyncze ogniska zmian na skórze i błonach śluzowych, pomoc położnej podczas przewijania i toalety noworodka oraz przy pielęgnacji kikuta pępowinowego
+   Oddychanie:
+    1: oddycha prawidłowo
+    2: zaburzenia oddychania np. oddech przyśpieszony, postękiwanie, tymczasowa tlenoterapia  i odśluzowywanie dróg oddechowych
+   Odżywianie:
+    1: karmienie piersią na żądanie, matka samodzielnie, prawidłowo przystawia noworodka do piersi
+    2: pomoc położnej przy dostawianiu noworodka do piersi, karmienie pokarmem matki przy pomocy kieliszka lub łyżeczki, wymaga dokarmiania i dopajania
+   Wydalanie:
+    1: prawidłowo wydalony stolec, mocz i gazy
+    2: problemy z zaspokojeniem potrzeb fizjologicznych, wymaga pomocy położnej poprzez odpowiednie ułożenie bądź jednorazowe zastosowanie rurki doodbytniczej
+   Żółtaczka Noworodków :
+    1: fizjologiczna
+    2: wymaga fototerapii – hiperbilirubinemia
+   Obserwacje I Pomiar Parametrów Życiowych:
+    1: obserwacja i pomiary podstawowych parametrów życiowych dokonywane są 2 x na dobę
+    2: obserwacja i pomiary podstawowych parametrów życiowych dokonywane są 3 x na dobę lub więcej w ciągu dnia
+   Badania Diagnostycze:
+    1: testy przesiewowe  na fenyloketonurię i hipotyreozę 
+    2: testy przesiewowe na fenyloketonurię i hipotyreozę, dodatkowo poziom bilirubiny, glikemia, morfologia krwi, gazometria, elektrolity, posiewy, wymazy, analiza moczu
+   Leczenie Profilaktyka:
+    1: szczepienia
+    2: leki doustne, iniekcje domięśniowe, wlewy kroplowe dożylne, krople, maści, kąpiele lecznicze
+PED:
+   Aktywność Fizyczna:
+    1: pacjent samodzielne lub przebywające na stałe z rodzicami
+    2: pacjent wymaga pomocy przy wstawaniu, większą część czasu spędza w łóżku
+    3: pacjent unieruchomione, w oddziale zabiegowym – I doba po zabiegu
+   Higiena:
+    1: we własnym zakresie lub przez rodziców przebywających na stałe z pacjentem
+    2: niewielka pomoc przy wykonaniu toalety
+    3: nie sygnalizuje potrzeb wymaga pełnego wsparcia przy wykonaniu toalety, wzmożona pielęgnacja skóry w szczególności postępowanie przeciwodleżynowe lub założony cewnik
+   Karmienie I Odżywianie:
+    1: samodzielnie lub pacjent karmiony piersią lub przebywający na stałe z rodzicami
+    2: niewielka pomoc, rozdrobnienie posiłku, schłodzenie płynów do picia 
+    3: wymaga karmienia
+   Wydalanie:
+    1: samodzielnie
+    2: wymaga pomocy w zaprowadzeniu do toalety
+    3: przeważnie sygnalizuje swoje potrzeby, korzysta z basenu, kaczki, często ma założony cewnik, może występować biegunka, korzysta  z pieluchomajtek
+   Pomiar Parametrów Życiowych :
+    1: podstawowe parametry 2 x na dobę
+    2: podstawowe parametry częściej niż 2x na dobę lub podstawowe 2x na dobę i pobieranie prób do badań 
+    3: podstawowe parametry częściej niż 2x na dobę, pobieranie prób krwi, moczu i innych wydzielin częściej niż 2x na dobę, stałe monitorowanie parametrów życiowych
+   Leczenie:
+    1: doustne, nawadnianie dożylne, podskórne (np. premedykacja), podanie kropli, maści do oczu, uszu, leczenie skóry, błon śluzowych, maści, zasypki itp.
+    2: leczenie dożylne, opatrunki 2x na dobę, inhalacje (zabiegi zajmujące 60–90 minut)
+    3: podawanie tlenu, wlewy dożylne i doodbytniczo, opatrunki częściej niż 2x na dobę, (zabiegi zajmujące więcej niż 90 minut)
+   Edukacja Zdrowotna Oraz Wsparcie Dziecka I Rodziców:
+    1: pełna wiedza na temat choroby, wymaga podstawowych informacji uzupełniających dotyczących stanu zdrowia, planu opieki praw pacjenta, organizacji oddziału
+    2: słaba orientacja o chorobie, wymaga wsparcia, manifestuje lęk
+    3: brak wiedzy o chorobie wymaga pełnej edukacji i przygotowania do samopielęgnacji, manifestuje lęk
+DIA:
+   Aktywność Fizyczna:
+    1: pacjent unieruchomiony w czasie dializy, nie wymaga pomocy w zmianie pozycji i wygodnym ułożeniu, po dializie pacjent samodzielny
+    2: pacjent wymaga niewielkiej pomocy przy zaścieleniu fotela, przy wstawaniu i ułożeniu się na fotelu, wejściu na wagę przy pionizacji
+   Higiena:
+    1: pacjent samodzielny po dializie, w trakcie trwania zabiegu nie ma potrzeby wykonywania czynności higienicznych
+    2: pacjent samodzielny w zakresie toalety twarzy, jamy ustnej, rąk, nie wymaga wykonywania innych czynności higienicznych
+   Odżywianie:
+    1: pacjent samodzielny
+    2: pacjent wymaga niewielkiej pomocy, podania tacy z posiłkiem, kubka lub talerza, rozdrobnienia pokarmu
+   Wydalanie:
+    1: pacjent nie zgłasza potrzeb
+    2: pacjent wymaga podania basenu lub kaczki
+   Pomiar Parametrów Życiowych:
+    1: w czasie trwania dializy - dwukrotny pomiar ciśnienia tętniczego krwi, tętna, temperatury ciała oraz oznaczenie masy ciała
+    2: w czasie trwania dializy - co najmniej trzykrotny pomiar ciśnienia tętniczego krwi, tętna, temperatury ciała, oraz oznaczenie masy ciała, co najmniej jednokrotne pobranie próbek krwi
+   Leczenie :
+    1: leczenie przez przetokę tętniczo-żylną do 4,5 godz., stosowanie zasypek leczniczych na skórę, wlewy kroplowe przez przetokę, wykonanie opatrunku na przetoce, wykonanie iniekcji podskórnych
+    2: leczenie przez „świeżą” przetokę tętniczo-żylną, wkłucie centralne, leczenie doustne, wykonanie więcej niż jednego opatrunku w czasie trwania dializy, częste stosowanie zasypek leczniczych, zmniejszenie objawów ubocznych dializy, stosowanie kompresów i przymoczek
+   Edukacja Zdrowotna i Opieka Psychospołeczna:
+    1: pełna wiedza na temat choroby i leczenia, dobra orientacja w sprawach zdrowia, nie wymaga wsparcia psychicznego, wymaga informacji o planach postępowania pielęgniarskiego
+    2: wymaga informacji o chorobie i leczeniu, diecie, sposobach zachowania lub poprawy zdrowia, planach postępowania pielęgniarskiego oraz wsparcia psychicznego, pacjenci przebywający po raz pierwszy na oddziale, zapoznawani z topografią oddziału, planem leczenia
+

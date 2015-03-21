@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?64734245');
+  src: url('../font/fontello.eot?64734245#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff?64734245') format('woff'),
+       url('../font/fontello.ttf?64734245') format('truetype'),
+       url('../font/fontello.svg?64734245#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?64734245#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+	/* you can be more comfortable with increased icons size */
+	/* font-size: 120%; */
+
+	/* Uncomment for 3D effect */
+	/*  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);  */}
+ 
+.icon-nurse:before { content: '\e800'; } /* '' */
+.icon-oddz-poloz:before { content: '\e801'; } /* '' */
+.icon-AktywnoscFizyczna2:before { content: '\e802'; } /* '' */
+.icon-AktywnoscFizyczna3:before { content: '\e803'; } /* '' */
+.icon-XX-26:before { content: '\e804'; } /* '' */
+.icon-AktywnoscFizyczna:before { content: '\e805'; } /* '' */
+.icon-PomiarObjawowZyciowych1:before { content: '\e806'; } /* '' */
+.icon-Leczenie:before { content: '\e807'; } /* '' */
+.icon-XX-apteczka:before { content: '\e808'; } /* '' */
+.icon-XX-mammography:before { content: '\e809'; } /* '' */
+.icon-hurted:before { content: '\e80a'; } /* '' */
+.icon-oddz-ch2:before { content: '\e80b'; } /* '' */
+.icon-oddz-int2:before { content: '\e80c'; } /* '' */
+.icon-XX-16:before { content: '\e80d'; } /* '' */
+.icon-XX-17:before { content: '\e80e'; } /* '' */
+.icon-XX-15:before { content: '\e80f'; } /* '' */
+.icon-oddz-blok:before { content: '\e810'; } /* '' */
+.icon-oddz-chidz:before { content: '\e811'; } /* '' */
+.icon-sort-name-up:before { content: '\e812'; } /* '' */
+.icon-sort-number-down:before { content: '\e813'; } /* '' */
+.icon-attention:before { content: '\e814'; } /* '' */
+.icon-sort-number-up:before { content: '\e815'; } /* '' */
+.icon-sort-name-down:before { content: '\e816'; } /* '' */
+.icon-oddz-psych:before { content: '\e817'; } /* '' */
+.icon-oddz-patc:before { content: '\e818'; } /* '' */
+.icon-oddz-chordz:before { content: '\e819'; } /* '' */
+.icon-oddz-reum:before { content: '\e81a'; } /* '' */
+.icon-kategoria:before { content: '\e81b'; } /* '' */
+.icon-oddz-ginek:before { content: '\e81c'; } /* '' */
+.icon-waga:before { content: '\e81d'; } /* '' */
+.icon-patient:before { content: '\e81e'; } /* '' */
+.icon-XX-1:before { content: '\e81f'; } /* '' */
+.icon-chart-pie:before { content: '\e820'; } /* '' */
+.icon-oddz-onko-1:before { content: '\e821'; } /* '' */
+.icon-oddz-szcz-1:before { content: '\e822'; } /* '' */
+.icon-oddz-pulmuno:before { content: '\e823'; } /* '' */
+.icon-XX-4:before { content: '\e824'; } /* '' */
+.icon-Leczenie1:before { content: '\e825'; } /* '' */
+.icon-oddz-ch3:before { content: '\e826'; } /* '' */
+.icon-oddz-mikro:before { content: '\e827'; } /* '' */
+.icon-oddz-kard:before { content: '\e828'; } /* '' */
+.icon-chart:before { content: '\e829'; } /* '' */
+.icon-oddz-oiom:before { content: '\e82a'; } /* '' */
+.icon-oddz-onko:before { content: '\e82b'; } /* '' */
+.icon-oddz-kardio:before { content: '\e82c'; } /* '' */
+.icon-chart-bar:before { content: '\e82d'; } /* '' */
+.icon-oddz-rehneu:before { content: '\e82e'; } /* '' */
+.icon-user-delete:before { content: '\e82f'; } /* '' */
+.icon-XX-8:before { content: '\e830'; } /* '' */
+.icon-remove:before { content: '\e831'; } /* '' */
+.icon-caduceus:before { content: '\e832'; } /* '' */
+.icon-EdukacjaIWsparciePsychiczne:before { content: '\e833'; } /* '' */
+.icon-oddz-dermat:before { content: '\e834'; } /* '' */
+.icon-menu:before { content: '\e835'; } /* '' */
+.icon-oddz-ortop:before { content: '\e836'; } /* '' */
+.icon-data:before { content: '\e837'; } /* '' */
+.icon-oddz-rehab:before { content: '\e838'; } /* '' */
+.icon-Wydalanie2:before { content: '\e839'; } /* '' */
+.icon-XX:before { content: '\e83a'; } /* '' */
+.icon-oddz-gastd:before { content: '\e83b'; } /* '' */
+.icon-XX-mri:before { content: '\e83c'; } /* '' */
+.icon-XX-13:before { content: '\e83d'; } /* '' */
+.icon-back:before { content: '\e83e'; } /* '' */
+.icon-Higiena:before { content: '\e83f'; } /* '' */
+.icon-oddz-int1:before { content: '\e840'; } /* '' */
+.icon-3:before { content: '\e841'; } /* '' */
+.icon-upper1:before { content: '\e842'; } /* '' */
+.icon-oddz-neur:before { content: '\e843'; } /* '' */
+.icon-2:before { content: '\e844'; } /* '' */
+.icon-XX-18:before { content: '\e845'; } /* '' */
+.icon-XX-7:before { content: '\e846'; } /* '' */
+.icon-oddz-urol:before { content: '\e847'; } /* '' */
+.icon-1:before { content: '\e848'; } /* '' */
+.icon-XX-25:before { content: '\e849'; } /* '' */
+.icon-Higiena3:before { content: '\e84a'; } /* '' */
+.icon-up:before { content: '\e84b'; } /* '' */
+.icon-XX-6:before { content: '\e84c'; } /* '' */
+.icon-syringe:before { content: '\e84d'; } /* '' */
+.icon-oddz-udaro:before { content: '\e84e'; } /* '' */
+.icon-oddz-laryn-1:before { content: '\e84f'; } /* '' */
+.icon-oddz-patol:before { content: '\e850'; } /* '' */
+.icon-down:before { content: '\e851'; } /* '' */
+.icon-excl:before { content: '\e852'; } /* '' */
+.icon-oddz-nef:before { content: '\e853'; } /* '' */
+.icon-XX-11:before { content: '\e854'; } /* '' */
+.icon-XX-12:before { content: '\e855'; } /* '' */
+.icon-Wydalanie:before { content: '\e856'; } /* '' */
+.icon-XX-24:before { content: '\e857'; } /* '' */
+.icon-XX-14:before { content: '\e858'; } /* '' */
+.icon-XX-3:before { content: '\e859'; } /* '' */
+.icon-Odzywianie3:before { content: '\e85a'; } /* '' */
+.icon-Odzywianie2:before { content: '\e85b'; } /* '' */
+.icon-oddz-laryn:before { content: '\e85c'; } /* '' */
+.icon-Odzywianie:before { content: '\e85d'; } /* '' */
+.icon-lightbulb:before { content: '\e85e'; } /* '' */
+.icon-calendar:before { content: '\e85f'; } /* '' */
+.icon-EdukacjaIWsparciePsychiczne2:before { content: '\e860'; } /* '' */
+.icon-hospital:before { content: '\e861'; } /* '' */
+.icon-PomiarObjawowZyciowych3:before { content: '\e862'; } /* '' */
+.icon-PomiarObjawowZyciowych:before { content: '\e863'; } /* '' */
+.icon-EdukacjaIWsparciePsychiczne3:before { content: '\e864'; } /* '' */
+.icon-sheet:before { content: '\e865'; } /* '' */
+.icon-Wydalanie3:before { content: '\e866'; } /* '' */
+.icon-EdukacjaIWsparciePsychiczne1:before { content: '\e867'; } /* '' */
+.icon-oddz-szcz:before { content: '\e868'; } /* '' */
+.icon-piel:before { content: '\e869'; } /* '' */
+.icon-XX-22:before { content: '\e86a'; } /* '' */
+.icon-icons:before { content: '\e86b'; } /* '' */
+.icon-floppy:before { content: '\e86c'; } /* '' */
+.icon-Leczenie3:before { content: '\e86d'; } /* '' */
+.icon-Leczenie2:before { content: '\e86e'; } /* '' */
+.icon-XX-10:before { content: '\e86f'; } /* '' */
+.icon-XX-28:before { content: '\e870'; } /* '' */
+.icon-XX-19:before { content: '\e871'; } /* '' */
+.icon-XX-23:before { content: '\e872'; } /* '' */
+.icon-PomiarObjawowZyciowych2:before { content: '\e873'; } /* '' */
+.icon-Higiena2:before { content: '\e874'; } /* '' */
+.icon-oddz-okul:before { content: '\e875'; } /* '' */
+.icon-XX-20:before { content: '\e876'; } /* '' */
+.icon-oddz-zakdo:before { content: '\e877'; } /* '' */
+.icon-XX-RTG:before { content: '\e878'; } /* '' */
+.icon-XX-5:before { content: '\e879'; } /* '' */
+.icon-XX-21:before { content: '\e87a'; } /* '' */
+.icon-wyniki:before { content: '\e87b'; } /* '' */
+.icon-upper2:before { content: '\e87c'; } /* '' */

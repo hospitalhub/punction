@@ -1,0 +1,49 @@
+url:	&url
+  edit.php?post_type=pacjent
+pages:
+  - pacjent_page_moi-pacjenci
+  - pacjent_page_raport
+menus:
+  - title:      Moi Pacjenci
+    type:		submenu
+    cap:        edit_pacjents
+    link:       moi-pacjenci
+    class:      Punction\WP\Menu
+    callback:   mypatientsPageCallback
+ 
+  - title:      Kategoryzacja
+    type:		submenu
+    cap:        edit_pacjents
+    link:       categorization
+    class:      Punction\WP\Menu
+    callback:   mypatientsPageCallback
+
+  - title:      Raport
+    type:		submenu
+    cap:        read_pacjenci_wszystkie_oddz
+    link:       raport
+    class:      Punction\WP\Menu
+    callback:   raportCallback
+menu-remove:
+  - url:        *url
+    page:       post-new.php?post_type=pacjent
+  - url:        *url
+    page:       *url
+plugin-styles:
+  - punction.css
+  - font/fontello.css
+plugin-scripts:
+  - punction.min.js
+styles:
+  - jquery.dataTables.min.css
+  - jquery.fancybox.css
+  - bootstrap.min.css
+  - bootstrap-select.min.css
+  - datepicker.css
+scripts:
+  - jquery.dataTables.min.js
+  - jquery.fancybox.pack.js
+  - bootstrap.min.js
+  - bootstrap-select.min.js
+  - bootstrap-datepicker.js
+  - bootstrap-datepicker.pl.js

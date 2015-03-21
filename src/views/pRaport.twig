@@ -1,0 +1,39 @@
+
+<div class="panel panel-default">
+	<form action="edit.php?post_type=pacjent&page=raport" method="post">
+		<div class="panel-heading">
+			Kategoryzacja: Raport <input onchange="this.form.submit()"
+				id="datepicker" name="date" class="span2" size="16" type="text"
+				value="{{ date }}"> <span class="add-on"><i class="icon-th"></i></span>
+			</input>
+		</div>
+		<div class="panel-body">
+			<select onchange="this.form.submit()" name="wardId"
+				class="selectpicker"> {% for ward in wards %}
+				<option value="{{ ward.id }}"
+					        {% if (ward.id == wardId) %}
+					selected="selected"  
+					       {% endif %}>{{ ward.name }}</option> {% endfor %}
+			</select>
+		</div>
+	</form>
+	<!-- Table -->
+	<table class="table" style="width: 400px;">
+		<tr>
+			<th>Data</th>
+			<th>kat. 1</th>
+			<th>kat. 2</th>
+			<th>kat. 3</th>
+		</tr>
+		{% if raport %} {% for data,y in raport %}
+		<tr>
+			<td>{{ data }}</td>
+			<td class="alert-success center">{{ y.1 }}</td>
+			<td class="alert-warning center">{{ y.2 }}</td>
+			<td class="alert-danger center">{{ y.3 }}</td>
+			<td class="label-danger center">{{ y.0 }}</td>
+		</tr>
+		{% endfor %} {% else %} Brak wpisów {% endif %}
+	</table>
+</div>
+

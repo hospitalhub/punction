@@ -1,0 +1,13 @@
+
+<div id="patients_form_ajax" style="display: none; width: 100%;"
+	class="form-horizontal">
+	<fieldset>
+		<input type="hidden" id="patient-id" name="patient-id" size="30"></input>
+		<input type="hidden" id="rowIndex" name="rowIndex" size="10"></input>
+		<input type="hidden" id="patients-min-category" name="patients-min-category" size="2"></input>
+		<input type="hidden" id="patients-max-category" name="patients-max-category" size="2"></input>
+		<!-- Form Name -->
+		{% include ['pFormTop.twig'] %} {% include ['pFormCategories.twig'] %}
+	</fieldset>
+	<!-- Button -->
+</div>

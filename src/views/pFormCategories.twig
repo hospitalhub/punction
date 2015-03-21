@@ -1,0 +1,36 @@
+<div id="form-panel" class="pform">
+	<div id="form-qa-panel">
+		{% set highlight = ['primary','success', 'warning', 'danger'] %} {%
+		for nazwa,kategorie in categories %} {% set id = (nazwa|escapePL) %}
+		<div class="btn-group pform-cat" id="{{ id }}">
+			<h4>
+				<span class="label label-primary icon-{{ id }}"> {{ nazwa }}</span>
+			</h4>
+			<div style="float: left;">
+				{% for wartość,opis in kategorie %} <input type="radio"
+					name="{{ id }}" id="{{ id~wartość }}" value="{{ wartość }}" /> <label
+					for="{{ id~wartość }}"
+					class="pform-label alert-{{ highlight[wartość] }}"> <span
+					class="icon-{{ id~wartość }}"></span> {{ opis }}
+				</label> <br /> {% endfor %}
+			</div>
+		</div>
+		{% endfor %}
+		<div>
+			<span id="punction_c1" class="label label-success">0</span> + <span
+				id="punction_c2" class="label label-warning">0</span> + <span
+				id="punction_c3" class="label label-danger">0</span> = <span
+				id="punction_pc" class="label label-default">Pacjent kategorii x</span>
+		</div>
+	</div>
+	<div class="control-group" style="float: left;">
+		<label class="control-label" for="save"></label>
+		<div class="controls">
+			<button id="save" name="save" class="btn btn-primary">Zapisz</button>
+		</div>
+		<br /> <br />
+		<br /> <br />
+		<br /> <br />
+	</div>
+</div>
+</div>
