@@ -1,4 +1,4 @@
-## Punction
+## Punction [![Build Status](https://travis-ci.org/amarcinkowski/punction.svg?branch=master)](https://travis-ci.org/amarcinkowski/punction)
 
 Punction is a tool for nurses to categorize patients.
 
