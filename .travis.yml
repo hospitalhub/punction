@@ -6,6 +6,8 @@ before_script:
   - cp resources/.env ~
   - composer install
   - composer db
-notifications:
-  email:
-    - andrzej.max.marcinkowski@gmail.com
+  - mkdir -p build/logs
+script:
+  - phpunit --coverage-clover build/logs/clover.xml
+after_script:
+  - php vendor/bin/coveralls

@@ -31,7 +31,8 @@
 		"phploc/phploc" : "*",
 		"pdepend/pdepend" : "*",
 		"phpmd/phpmd" : "*",
-		"sebastian/phpcpd" : "*"
+		"sebastian/phpcpd" : "*",
+		"satooshi/php-coveralls" : "dev-master"
 	},
 	"repositories" : [{
 			"type" : "composer",
