@@ -3,3 +3,5 @@
 /composer.lock
 /phantomjsdriver.log
 /.project
+/.settings/
+/.buildpath
