@@ -46,10 +46,7 @@
 			"url" : "http://wpackagist.org"
 		}
 	],
-	"config": {
-        "bin-dir": "bin/"
-    },
-    "scripts": {
+	"scripts": {
 		"db" : "vendor/bin/doctrine orm:schema-tool:update --force --dump-sql"
 	}
 }
