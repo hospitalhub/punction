@@ -22,8 +22,8 @@
 		"phpoffice/phpexcel" : "*",
 		"twig/twig" : "*",
 		"apache/log4php" : "2.3.0",
- 		"sauce/sausage": ">=0.6",
-		"sauce/connect": ">=3.0"
+		"sauce/sausage" : ">=0.6",
+		"sauce/connect" : ">=3.0"
 	},
 	"require-dev" : {
 		"phpunit/phpunit" : "4.1.*",
@@ -34,14 +34,22 @@
 		"pdepend/pdepend" : "*",
 		"phpmd/phpmd" : "*",
 		"sebastian/phpcpd" : "*",
-		"satooshi/php-coveralls" : "dev-master"
+		"satooshi/php-coveralls" : "dev-master",
+		"behat/behat": "2.4.*@stable",
+		"behat/mink": "1.4.*@stable",
+        "behat/mink-extension": "*",
+        "behat/mink-goutte-driver": "*",
+        "behat/mink-selenium2-driver": "*"
 	},
 	"repositories" : [{
 			"type" : "composer",
 			"url" : "http://wpackagist.org"
 		}
 	],
-	"scripts": {
+	"config": {
+        "bin-dir": "bin/"
+    },
+    "scripts": {
 		"db" : "vendor/bin/doctrine orm:schema-tool:update --force --dump-sql"
 	}
 }
