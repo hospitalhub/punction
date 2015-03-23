@@ -7,6 +7,7 @@ before_script:
   - composer install
   - composer db
   - mkdir -p build/logs
+  - selenium.sh
 script:
   - phpunit --coverage-clover build/logs/clover.xml
   - ./vendor/behat/behat/bin/behat
