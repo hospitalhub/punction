@@ -1,21 +1,14 @@
 language: php
 php:
   - 5.6
-env:
-  global:
-    - secure: Wmh0a8P0j/5EtUInQ74pc85dWRYULs05vdGyjIhih4CPwgtsA9LtWh8mq4HaFJxlj3bnE84tK5jfMCB9tbBmV+5VX5SmvaC88uQZI0/F5VAjIGxItm7xdwmgxe782PQsngEUqjg25E/Ly9aXLP/BuRNsLlj0ZXenLvGL9f2Sd4Q=
-    - secure: aboWS7MFJTkZW1ge81s1Rkou+dmwvwWh84TB+/kOwl07UyJshWVbLVUfp4FXohdyik1S5zS0RAONTKoeTvKh6jrGacBhPYxVYZIlFOQ/b4tEIuZv13dOpiJ9b1qj6CVKTzFeO/kwrDoPSM9IZtfmvHpMUm96SqcdezBWgd+kLcI=
 before_script:
   - tests/install-wp-tests.sh wordpress_test root '' localhost latest
   - cp resources/.env ~
   - composer install
   - composer db
   - mkdir -p build/logs
-  - ./selenium.sh
 script:
   - phpunit --coverage-clover build/logs/clover.xml
   - bin/behat
 after_script:
   - php vendor/bin/coveralls
-addons:
-  sauce_connect: true
