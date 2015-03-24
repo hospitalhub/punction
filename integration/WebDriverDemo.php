@@ -1,5 +1,5 @@
 <?php 
-class WebDriverDemo extends Sauce\Sausage\WebDriverTestCase
+class WebDriverDemo /* extends Sauce\Sausage\WebDriverTestCase */
 {
     public static $browsers = array(
         // run FF15 on Windows 8 on Sauce
