@@ -2,14 +2,22 @@ language: php
 php:
   - 5.6
 before_script:
+  # wordpress
   - tests/install-wp-tests.sh wordpress_test root '' localhost latest
+  - rm -rf /var/www
+  - ln -s /tmp/wordpress "$(pwd)/web" 
   - cp resources/.env ~
+  - sudo apt-get install -y --force-yes apache2 libapache2-mod-php5 php5-curl php5-mysql php5-intl
+  - sudo sed -i -e "s,/var/www,$(pwd)/web,g" /etc/apache2/sites-available/default
+  - sudo /etc/init.d/apache2 restart
+  # dependencies db
   - composer install
   - composer db
+  # logs selenium integration tests
   - mkdir -p build/logs
   - ./selenium.sh
 script:
-  - phpunit --coverage-clover build/logs/clover.xml
-  - ./vendor/behat/behat/bin/behat
+  - composer test
+  - composer behat
 after_script:
   - php vendor/bin/coveralls

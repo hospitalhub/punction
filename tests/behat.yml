@@ -6,4 +6,4 @@ default:
             goutte: ~
             selenium2:
                 browser: 'firefox'
-                capabilities: { "browser": "firefox", "browserVersion": "3.6", "version": "2.44.0"}
+                capabilities: { "browser": "firefox", "browserVersion": "33", "version": "ANY", platform:"LINUX", deviceType:"PC"}

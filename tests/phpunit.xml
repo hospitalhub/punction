@@ -7,7 +7,7 @@
 	<testsuites>
 		<testsuite name="Tests">
 			<directory suffix=".php">./tests/</directory>
-			<directory suffix=".php">./integration/</directory>
+			<!-- <directory suffix=".php">./integration/</directory>  -->
 		</testsuite>
 	</testsuites>
 	<filter>
@@ -16,8 +16,8 @@
 		</whitelist>
 	</filter>
 	<logging>
-		<log type="coverage-html" target="build/coverage"/>
+		<!-- <log type="coverage-html" target="build/coverage"/> -->
 		<log type="coverage-clover" target="build/logs/clover.xml"/>
-		<log type="junit" target="build/logs/junit.xml" logIncompleteSkipped="false"/>
+		<!-- <log type="junit" target="build/logs/junit.xml" logIncompleteSkipped="false"/> -->
 	</logging>
 </phpunit>

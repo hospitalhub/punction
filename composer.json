@@ -45,6 +45,8 @@
 		}
 	],
 	"scripts": {
-		"db" : "vendor/bin/doctrine orm:schema-tool:update --force --dump-sql"
+                "db" : "vendor/bin/doctrine orm:schema-tool:update --force --dump-sql",
+                "behat": "./vendor/behat/behat/bin/behat --config tests/behat.yml",
+                "test": "phpunit -c tests/phpunit.xml --coverage-clover build/logs/clover.xml"
 	}
 }

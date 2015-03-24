@@ -101,7 +101,7 @@ class IntegrationTest extends PHPUnit_Extensions_Selenium2TestCase {
 	 * @param string $text        	
 	 */
 	function notice($text = '') {
-		$imgSrcFilePath = __DIR__ . '/../resources/excl.png';
+		$imgSrcFilePath = __DIR__ . '/../resources/img/excl.png';
 		$imgFilename = (++ $this->i) . '_' . date ( 'YmdHis' ) . '.png';
 		$imgFilePath = DocumentTemplate::getDocDir () . $imgFilename;
 		copy ( $imgSrcFilePath, $imgFilePath );
