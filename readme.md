@@ -4,7 +4,11 @@ Punction is a tool for nurses to categorize patients.
 
 Depends on hospitalplugin. Development supported by WSZ.
 
+#License
 
+Licensed under the MIT License.
+
+Copyright 2014-2015 Wojewódzki Szpital Zespolony im. Ludwika Perzyny w Kaliszu.
 
 
 

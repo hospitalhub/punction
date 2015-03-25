@@ -10,28 +10,6 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    markdown: {
-    all: {
-      files: [
-        {
-          expand: true,
-          src: 'build/docs/src/*.md',
-          dest: 'build/docs/html/',
-          ext: '.html'
-        }
-      ]
-    }
-  },
-  markdownpdf: {
-	options: {
-	cssPath: '../../../../../resources/markdown.css',
-	renderDelay: 1000
-	},
-	files: {
-	  src: "build/docs/src/*.md",
-	  dest: "build/docs/pdf/"
-	    }
-  },
     jshint: {
       all: [
         './src/js/punction*.js'
@@ -141,10 +119,6 @@ module.exports = function(grunt) {
   // Register tasks
   grunt.registerTask('default', [
     'build'
-  ]);
-  grunt.registerTask('doc', [
-     'markdown',
-     'markdownpdf'
   ]);
   grunt.registerTask('dev', [
     'curl',

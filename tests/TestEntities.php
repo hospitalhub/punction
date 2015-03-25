@@ -5,6 +5,7 @@ use Punction\Entities\PatientZZ;
 use Punction\Entities\PatientPED;
 use Punction\Entities\PatientBuilder;
 use Hospitalplugin\utils\PersonGenerator;
+use Punction\Entities\PatientDIA;
 
 class TestEntities extends PHPUnit_Framework_TestCase
 {
@@ -41,7 +42,31 @@ class TestEntities extends PHPUnit_Framework_TestCase
         // string
         $this->assertEquals($p->toString(),"Jan83051703671", "spodziewany: " . $p->toString());
     }
-
+    
+    
+    function testGetSetDIA()
+    {
+    	$p = new PatientDIA();
+    	$p->setName("Jan");
+    	$p->setPesel("83051703671");
+    	$p->setNumerHistorii("123");
+    	$p->setAktywnoscFizyczna(1);
+    	$p->setEdukacjaZdrowotnaIOpiekaPsychospoleczna(1);
+    	$this->assertTrue($p->getName() == "Jan");
+    	$this->assertFalse($p->getName() == "83030301144");
+    	$this->assertTrue($p->getAktywnoscFizyczna() == 1);
+    	$this->assertTrue($p->getEdukacjaZdrowotnaIOpiekaPsychospoleczna() == 1);
+    	// test JSON
+    	$json = json_decode($p->toDatatablesJSONString());
+    	$this->assertTrue($json->aktywnoscFizyczna == 1);
+    	// csv string
+    	$this->assertTrue($p->toDatatablesString() == "Jan,83051703671,123,,,1");
+    	// string
+    	$this->assertEquals($p->toString(),"Jan83051703671", "spodziewany: " . $p->toString());
+    }
+    
+    
+    
     function testGetSetPED()
     {
         $p = new PatientPED();
