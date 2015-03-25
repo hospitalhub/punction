@@ -9,7 +9,7 @@
 	"description" : "Patients Unified Nurse Categorization Tool",
 	"version" : "1.0.1",
 	"type" : "wordpress-plugin",
-	"license" : "GPL",
+	"license" : "MIT",
 	"authors" : [{
 			"name" : "Andrzej Marcinkowski",
 			"email" : "andrzej.max.marcinkowski@gmail.com"
@@ -25,19 +25,12 @@
 	},
 	"require-dev" : {
 		"phpunit/phpunit" : "4.1.*",
-		"phpunit/phpunit-selenium" : "*",
-		"netwing/selenium-server-standalone" : "2.43.*",
 		"squizlabs/php_codesniffer" : "*",
 		"phploc/phploc" : "*",
 		"pdepend/pdepend" : "*",
 		"phpmd/phpmd" : "*",
 		"sebastian/phpcpd" : "*",
-		"satooshi/php-coveralls" : "dev-master",
-		"behat/behat": "2.4.*@stable",
-		"behat/mink": "1.4.*@stable",
-        "behat/mink-extension": "*",
-        "behat/mink-goutte-driver": "*",
-        "behat/mink-selenium2-driver": "*"
+		"satooshi/php-coveralls" : "dev-master"
 	},
 	"repositories" : [{
 			"type" : "composer",
@@ -45,8 +38,7 @@
 		}
 	],
 	"scripts": {
-                "db" : "vendor/bin/doctrine orm:schema-tool:update --force --dump-sql",
-                "behat": "./vendor/behat/behat/bin/behat",
-                "test": "phpunit --coverage-clover build/logs/clover.xml"
+        "db" : "vendor/bin/doctrine orm:schema-tool:update --force --dump-sql",
+        "test": "phpunit --coverage-clover build/logs/clover.xml"
 	}
 }
