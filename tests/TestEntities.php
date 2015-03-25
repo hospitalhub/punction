@@ -52,15 +52,15 @@ class TestEntities extends PHPUnit_Framework_TestCase
     	$p->setNumerHistorii("123");
     	$p->setAktywnoscFizyczna(1);
     	$p->setEdukacjaZdrowotnaIOpiekaPsychospoleczna(1);
-    	$this->assertTrue($p->getName() == "Jan");
-    	$this->assertFalse($p->getName() == "83030301144");
-    	$this->assertTrue($p->getAktywnoscFizyczna() == 1);
-    	$this->assertTrue($p->getEdukacjaZdrowotnaIOpiekaPsychospoleczna() == 1);
+    	$this->assertTrue($p->getName() == "Jan","check name");
+    	$this->assertFalse($p->getName() == "83030301144","check pesel");
+    	$this->assertTrue($p->getAktywnoscFizyczna() == 1,"check AF");
+    	$this->assertTrue($p->getEdukacjaZdrowotnaIOpiekaPsychospoleczna() == 1,"check EZIOP");
     	// test JSON
     	$json = json_decode($p->toDatatablesJSONString());
-    	$this->assertTrue($json->aktywnoscFizyczna == 1);
+    	$this->assertTrue($json->aktywnoscFizyczna == 1,"json AF");
     	// csv string
-    	$this->assertTrue($p->toDatatablesString() == "Jan,83051703671,123,,,1");
+    	$this->assertTrue($p->toDatatablesString() == "Jan,83051703671,123,,,1,,,,,,1","db string check, expected:".$p->toDatatablesString());
     	// string
     	$this->assertEquals($p->toString(),"Jan83051703671", "spodziewany: " . $p->toString());
     }
