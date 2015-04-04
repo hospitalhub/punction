@@ -17,13 +17,6 @@ use Hospitalplugin\WP\Menu;
 use Symfony\Component\Yaml\Yaml;
 require_once WP_CONTENT_DIR . "/../vendor/autoload.php";
 
-/*
- * ( 'clndr/underscore-min.js', $jQ );
- * ( 'clndr/moment-with-langs.js', $jQ
- * ( 'd3/d3.min.js', $jQ );
- * ( 'cal-heatmap/cal-heatmap.min.js',
- */
-
 $cfg = Yaml::parse(file_get_contents(__DIR__ . '/punction.yml'));
 
 $menuPnct = new Menu();
