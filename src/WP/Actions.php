@@ -51,6 +51,10 @@ class Actions
      */
     static function init()
     {
+	add_action( 'init', array(
+	    __CLASS__,
+	    'create_post_type' 
+	));
         add_action('admin_head', array(
             __CLASS__,
             'hideAdminMenu'
@@ -69,6 +73,19 @@ class Actions
         ));
     }
 
+	
+    static function create_post_type() {
+	  register_post_type( 'pacjent',
+	    array(
+	      'labels' => array(
+	        'name' => __( 'Pacjenci' ),
+	        'singular_name' => __( 'Pacjent' )
+	      ),
+	      'public' => true,
+	      'has_archive' => false,
+	    )
+	  );
+    }
     /**
      * hide admin menu
      * 
