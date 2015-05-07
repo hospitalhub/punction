@@ -19,11 +19,18 @@ menus:
     callback:   mypatientsPageCallback
 
   - title:      Raport
-    type:		submenu
+    type:   submenu
     cap:        read_pacjenci_wszystkie_oddz
     link:       raport
     class:      Punction\WP\Menu
     callback:   raportCallback
+
+  - title:      Wykresy
+    type:   submenu
+    cap:        read_pacjenci_wszystkie_oddz
+    link:       wykresy
+    class:      Punction\WP\Menu
+    callback:   wykresyCallback
 menu-remove:
   - url:        *url
     page:       post-new.php?post_type=pacjent

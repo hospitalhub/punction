@@ -1,0 +1,25 @@
+
+<div class="panel panel-default">
+	<form action="edit.php?post_type=pacjent&page=raport" method="post">
+		<div class="panel-heading">
+			Kategoryzacja: Raport <input onchange="this.form.submit()"
+				id="datepicker" name="date" class="span2" size="16" type="text"
+				value="{{ date }}"> <span class="add-on"><i class="icon-th"></i></span>
+			</input>
+		</div><div class="panel-body">
+			<select onchange="this.form.submit()" name="wardId"
+				class="selectpicker"> {% for ward in wards %}
+				<option value="{{ ward.id }}"
+					        {% if (ward.id == wardId) %}
+					selected="selected"  
+					       {% endif %}>{{ ward.name }}</option> {% endfor %}
+			</select>
+		</div>
+	</form>
+
+		{% if raport %} {% for data,y in raport %}
+			{{ data }} {{ y.1 }} {{ y.2 }} {{ y.3 }} {{ y.0 }}
+		{% endfor %} {% else %} Brak wpisów {% endif %}
+	</table>
+</div>
+

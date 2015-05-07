@@ -61,13 +61,22 @@ class Menu
         }
         include __DIR__ . '/../pages/' . 'punction-mypatients.php';
     }
-    
+
     /**
      * mypatientsPageCallback
      */
     static function raportCallback()
     {
-        include __DIR__ . '/../pages/' . 'punction-raport.php';
+    	include __DIR__ . '/../pages/' . 'punction-raport.php';
+    }
+    
+
+    /**
+     * mypatientsPageCallback
+     */
+    static function raportCallback()
+    {
+    	include __DIR__ . '/../pages/' . 'punction-wykresy.php';
     }
 }
 ?>
