@@ -74,7 +74,7 @@ class Menu
     /**
      * mypatientsPageCallback
      */
-    static function raportCallback()
+    static function wykresyCallback()
     {
     	include __DIR__ . '/../pages/' . 'punction-wykresy.php';
     }
