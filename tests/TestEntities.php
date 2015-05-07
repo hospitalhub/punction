@@ -228,8 +228,8 @@ class TestEntities extends PHPUnit_Framework_TestCase
     
     private function getRandomPatient() {
         $person = PersonGenerator::getRandomPerson();
-        $name = explode(',',$person)[0];
-        $pesel = explode(',',$person)[1];
+        $name = explode('|',$person)[0];
+        $pesel = explode('|',$person)[1];
         $pb = new PatientBuilder();
         return $pb->name($name)->pesel($pesel)->build();
     }

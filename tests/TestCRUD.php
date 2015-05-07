@@ -58,11 +58,12 @@ class TestCRUD extends PHPUnit_Framework_TestCase
     function testPatientCRUD3()
     {
         foreach (array(
-            1645 => 'PED',
-            1648 => 'ZZ',
-            1665 => 'ZZ',
-            1662 => 'PSY',
-            1654 => 'DIA'
+        		1 => 'ZZ'
+//             1645 => 'PED',
+//             1648 => 'ZZ',
+//             1665 => 'ZZ',
+//             1662 => 'PSY',
+//             1654 => 'DIA'
         ) as $oddzid => $typ) {
             foreach (array(
                 0,
@@ -99,8 +100,8 @@ class TestCRUD extends PHPUnit_Framework_TestCase
         $class = 'Punction\Entities\Patient' . $typ;
         $patient = new $class;
         $person = PersonGenerator::getRandomPerson();
-        $patient->setName(explode(',',$person)[0]);
-        $patient->setPesel(explode(',',$person)[1]);
+        $patient->setName(explode('|',$person)[0]);
+        $patient->setPesel(explode('|',$person)[1]);
         return $patient;
     }
 }
