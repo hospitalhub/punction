@@ -3,6 +3,7 @@ url:	&url
 pages:
   - pacjent_page_moi-pacjenci
   - pacjent_page_raport
+  - pacjent_page_wykresy
 menus:
   - title:      Moi Pacjenci
     type:		submenu
