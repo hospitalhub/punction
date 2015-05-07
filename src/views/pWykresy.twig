@@ -1,6 +1,6 @@
 
 <div class="panel panel-default">
-	<form action="edit.php?post_type=pacjent&page=raport" method="post">
+	<form action="edit.php?post_type=pacjent&page=wykresy" method="post">
 		<div class="panel-heading">
 			Kategoryzacja: Raport <input onchange="this.form.submit()"
 				id="datepicker" name="date" class="span2" size="16" type="text"
@@ -16,7 +16,13 @@
 			</select>
 		</div>
 	</form>
-
+		<script>
+				var raport = JSON.parse('{{ raport|json_encode|raw }}');
+		</script>
+		<br><br/>
+		w JS jest:<br>
+		var raport = JSON.parse('{{ raport|json_encode|raw }}');
+		<br><br/>
 		{% if raport %} {% for data,y in raport %}
 			{{ data }} {{ y.1 }} {{ y.2 }} {{ y.3 }} {{ y.0 }}
 		{% endfor %} {% else %} Brak wpisów {% endif %}
