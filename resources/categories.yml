@@ -89,123 +89,167 @@ PSY:
     2: okresowo uczestniczy w zajęciach terapeutycznych, nie kończy podjętych zadań
     3: nie uczestniczy w życiu społeczności i terapii zajęciowej
 POR:
-   1. I okres porodu:
+   I Ciąża:
     1: Ciąża >37 Hbd; płód pojedynczy, żywy, położenie podłużne- główkowe
     2: Ciąża >32 <37 Hbd i powyżej 40 Hbd; ciąża bliźniacza lub pojedyncza położenie nieprawidłowe
     3: Ciąża <32 Hbd, ciąża mnoga, położenie płodu nieprawidłowe lub ciąża martwa
-   2. I okres porodu:
+   I Wywiad:
     1: Przebieg ciąży prawidłowy bez dolegliwości ze strony innych układów
     2: Wywiad położniczy obciążony, w tej lub poprzednich ciążach
     3: Wywiad położniczy obciążony lub choroby innych układów
-   3. I okres porodu:
+   I Pozycja:
     1: Pozycja dowolna, rodząca chodzi 
     2: Pozycja częściowo ograniczona
     3: Rodząca leżąca 
-   4. I okres porodu:
+   I Higiena:
     1: Pełna samodzielność w zakresie czynności higienicznych
     2: Wymaga pomocy  w toalecie ciała, szczególnie higiena krocza
     3: Wymaga stałej pomocy w utrzymaniu higieny ciała
-   5. I okres porodu:
+   I Dieta:
     1: Dieta lekkostrawna, płyny wg potrzeb
     2: Dieta płynna  z ograniczeniami
     3: Dieta ścisła
-   6. I okres porodu:
+   I Pomiar parametrów życiowych:
     1: Rutynowy pomiar parametrów życiowych
     2: Pomiar parametrów życiowych co 2 godziny
     3: Pomiar parametrów życiowych co 15 minut (karta obserwacji)
-   7. I okres porodu:
+   I ASP:
     1: Rutynowa kontrola akcji serca płodu (monitorowanie dłuższe przy przyjęciu rodzącej do oddziału)
     2: Okresowe monitorowanie ASP (dodatkowo)
     3: Stałe monitorowanie ASP
-   8. I okres porodu:
+   I Postęp porodu:
     1: Postęp porodu prawidłowy, do 8 godzin 
     2: Zaburzenia w postępie porodu lub planowane ciecie cesarskie 
     3: Zaburzenia czynności skurczowej macicy, brak postępu porodu lub nagle cięcie cesarskie
-   9. I okres porodu:
+   I Wydalanie:
     1: Potrzeby wydalania zaspokaja sama
     2: Wymaga podania basenu
     3: Cewnikowanie lub cewnik na stałe
-   10. I okres porodu:
+   I Pęcherz płodowy:
     1: Zachowany pęcherz płodowy, pęknięcie o czasie
     2: Pęknięty pęcherz płodowy, odpływa prawidłowy płyn owodniowy
     3: Odpływa płyn owodniowy o nieprawidłowym zabarwieniu i woni lub w dużej ilość
-   11. I okres porodu:
+   I Ćwiczenia oddechowe:
     1: Rodząca stosuje ćwiczenia oddechowe, relaksujące, korzysta z udogodnień
     2: Rodząca wymaga instruktażu odnośnie ćwiczeń oddechowych i relaksujących
     3: Rodząca wymaga stałej pomocy w stosowaniu ćwiczeń oddechowych i relaksujących
-   12. I okres porodu:
+   I Leki:
     1: Otrzymuje leki doustne, doodbytnicze, domięśniowe
     2: Otrzymuje leki doustne, doodbytnicze, domięśniowe, dożylne
     3: Otrzymuje leki parenteralnie, infuzja (dożylnie)
-   13. I okres porodu:
+   I Edukacja zdrowotna i wsparcie psychiczne:
     1: Pozytywne nastawienie rodzącej do porodu, dobra orientacja co do przebiegu porodu, dobry kontakt z położną, rodząca jest spokojna  i opanowana
     2: Mierna orientacja co do przebiegu porodu, utrudniony kontakt z położną, rodząca nieopanowana, niespokojna, wymaga okresowego wsparcia osoby towarzyszącej
     3: Negatywny stosunek do porodu i osób towarzyszących, brak orientacji w przebiegu porodu, wymaga stałej obecności położnej
-   1. II okres porodu:
+   II Czas:
     1: Czas przebiegu do 2 godzin 
     2: Przedłużajacy się ponad 2 godziny
     3: Poród zabiegowy, nagłe cięcie cesarskie
-   2. II okres porodu:
+   II Pozycja:
     1: Podczas parcia pozycja dowolna
     2: Podczas parcia pozycja ograniczona
     3: Podczas parcia pozycja wymuszona
-   3. II okres porodu:
+   II Czystość krocza:
     1: Wymaga zapewnienia czystości krocza 
     2: Wymaga zapewnienia czystości krocza 
     3: Wymaga zapewnienia czystości krocza i okolic przylegających
-   4. II okres porodu:
+   II Nacięcie:
     1: Ochrona krocza 
     2: Znieczulenie, nacięcie krocza
     3: Pęknięcie krocza, rozlegle nacięcie
-   5. II okres porodu:
+   II Aktywność:
     1: Rodząca aktywnie uczestniczy w porodzie
     2: Rodząca wymaga nauki, pomocy przy parciu
     3: Rodząca wymaga aktywnej pomocy, biernie uczestniczy w porodzie
-   6. II okres porodu:
-    1: 6. Zastosowanie mają pkt 4–7,9, 12 i 13 dotyczące I okresu porodu
-    2: 6. Zastosowanie mają pkt 4–7, 9, 12 i 13 dotyczące I okresu porodu
-    3: 6. Zastosowanie mają pkt 4–7, 9, 12 i 13 dotyczące I okresu porodu
-   1. III okres porodu:
+   II Higiena:
+    1: Pełna samodzielność w zakresie czynności higienicznych
+    2: Wymaga pomocy  w toalecie ciała, szczególnie higiena krocza
+    3: Wymaga stałej pomocy w utrzymaniu higieny ciała
+   II Dieta:
+    1: Dieta lekkostrawna, płyny wg potrzeb
+    2: Dieta płynna  z ograniczeniami
+    3: Dieta ścisła
+   II Pomiar parametrów życiowych:
+    1: Rutynowy pomiar parametrów życiowych
+    2: Pomiar parametrów życiowych co 2 godziny
+    3: Pomiar parametrów życiowych co 15 minut (karta obserwacji)
+   II ASP:
+    1: Rutynowa kontrola akcji serca płodu (monitorowanie dłuższe przy przyjęciu rodzącej do oddziału)
+    2: Okresowe monitorowanie ASP (dodatkowo)
+    3: Stałe monitorowanie ASP
+   II Wydalanie:
+    1: Potrzeby wydalania zaspokaja sama
+    2: Wymaga podania basenu
+    3: Cewnikowanie lub cewnik na stałe
+   II Leki:
+    1: Otrzymuje leki doustne, doodbytnicze, domięśniowe
+    2: Otrzymuje leki doustne, doodbytnicze, domięśniowe, dożylne
+    3: Otrzymuje leki parenteralnie, infuzja (dożylnie)
+   II Edukacja zdrowotna i wsparcie psychiczne:
+    1: Pozytywne nastawienie rodzącej do porodu, dobra orientacja co do przebiegu porodu, dobry kontakt z położną, rodząca jest spokojna  i opanowana
+    2: Mierna orientacja co do przebiegu porodu, utrudniony kontakt z położną, rodząca nieopanowana, niespokojna, wymaga okresowego wsparcia osoby towarzyszącej
+    3: Negatywny stosunek do porodu i osób towarzyszących, brak orientacji w przebiegu porodu, wymaga stałej obecności położnej
+   III Apgar:
     1: Noworodek w skali Apgar 7–10 pkt
     2: Noworodek w skali Apgar 4–6 pkt
     3: Noworodek w skali Apgar 0–3 pkt
-   2. III okres porodu:
+   III Waga:
     1: Waga noworodka 2500-4000 g 
     2: Waga noworodka poniżej 2500 g lub powyżej 4000 g 
     3: Waga noworodka poniżej 1500 g, wady u noworodka, martwo urodzony lub umierający po porodzie
-   3. III okres porodu:
-    1: 3. Bardzo dobry kontakt matki z noworodkiem
-    2: 3. Kontakt matki z noworodkiem zaburzony, matka obojętna 
-    3: 3. Brak kontaktu lub niechęć matki do noworodka
-   4. III okres porodu:
-    1: 4.Bierne i czynne prowadzenie III okresu porodu, popłód kompletny
-    2: 4. Czynne prowadzenie III okresu porodu; wątpliwości w ocenie popłodu
-    3: 4. Patologia III okresu porodu, zabiegi manualne lub instrumentalne
-   5. III okres porodu:
-    1: 5. Krwawienie z dróg rodnych do 200 ml
-    2: 5. Krwawienie z dróg rodnych powyżej 200 ml
-    3: 5. Krwotok z dróg rodnych
-   6. III okres porodu:
-    1: 6. Kanał rodny bez obrażeń
-    2: 6. Otarcia, pęknięcia kanału rodnego, nacięcie krocza
-    3: 6. Pęknięcie krocza II lub III stopnia
-   7. III okres porodu:
-    1: 7. Zastosowanie mają pkt 4–6, 9, 12 i 13 dotyczące I okresu porodu
-    2: 7. Zastosowanie mają pkt 4–6, 9, 12 i 13 dotyczące I okresu porodu
-    3: 7. Zastosowanie mają pkt 4–6, 9, 12 i 13 dotyczące I okresu porodu
-   1. IV okres porodu:
+   III Kontakt:
+    1: Bardzo dobry kontakt matki z noworodkiem
+    2: Kontakt matki z noworodkiem zaburzony, matka obojętna 
+    3: Brak kontaktu lub niechęć matki do noworodka
+   III Zabiegi:
+    1: Bierne i czynne prowadzenie III okresu porodu, popłód kompletny
+    2: Czynne prowadzenie III okresu porodu; wątpliwości w ocenie popłodu
+    3: Patologia III okresu porodu, zabiegi manualne lub instrumentalne
+   III Krwawienie:
+    1: Krwawienie z dróg rodnych do 200 ml
+    2: Krwawienie z dróg rodnych powyżej 200 ml
+    3: Krwotok z dróg rodnych
+   III Nacięcie:
+    1: Kanał rodny bez obrażeń
+    2: Otarcia, pęknięcia kanału rodnego, nacięcie krocza
+    3: Pęknięcie krocza II lub III stopnia
+   III Higiena:
+    1: Pełna samodzielność w zakresie czynności higienicznych
+    2: Wymaga pomocy  w toalecie ciała, szczególnie higiena krocza
+    3: Wymaga stałej pomocy w utrzymaniu higieny ciała
+   III Dieta:
+    1: Dieta lekkostrawna, płyny wg potrzeb
+    2: Dieta płynna  z ograniczeniami
+    3: Dieta ścisła
+   III Pomiar parametrów życiowych:
+    1: Rutynowy pomiar parametrów życiowych
+    2: Pomiar parametrów życiowych co 2 godziny
+    3: Pomiar parametrów życiowych co 15 minut (karta obserwacji)
+   III Wydalanie:
+    1: Potrzeby wydalania zaspokaja sama
+    2: Wymaga podania basenu
+    3: Cewnikowanie lub cewnik na stałe
+   III Leki:
+    1: Otrzymuje leki doustne, doodbytnicze, domięśniowe
+    2: Otrzymuje leki doustne, doodbytnicze, domięśniowe, dożylne
+    3: Otrzymuje leki parenteralnie, infuzja (dożylnie)
+   III Edukacja zdrowotna i wsparcie psychiczne:
+    1: Pozytywne nastawienie rodzącej do porodu, dobra orientacja co do przebiegu porodu, dobry kontakt z położną, rodząca jest spokojna  i opanowana
+    2: Mierna orientacja co do przebiegu porodu, utrudniony kontakt z położną, rodząca nieopanowana, niespokojna, wymaga okresowego wsparcia osoby towarzyszącej
+    3: Negatywny stosunek do porodu i osób towarzyszących, brak orientacji w przebiegu porodu, wymaga stałej obecności położnej
+   IV Obserwacja:
     1: Skrócony czas przebywania na sali porodowej
     2: Dwugodzinna obserwacja
     3: Obserwacja powyżej 2 godzin
-   2. IV okres porodu:
+   IV Pomiar parametrów życiowych:
     1: Rutynowy pomiar parametrów życiowych, wysokości dna macicy, krwawienia z dróg rodnych
     2: Pomiar parametrów życiowych co 15 min., kontrola wysokości dna macicy i krwawienia z dróg rodnych (krwawienie zwiększone)
     3: Opieka po znieczuleniu ogólnym, dokładna obserwacja i pomiar parametrów życiowych, wysokości dna macicy i krwawienia z dróg rodnych
-   3. IV okres porodu:
+   IV Karmienie:
     1: Matka karmi dziecko piersią 
     2: Matka wymaga pomocy w przystawieniu dziecka do piersi
     3: Matka nie karmi dziecka piersią, zły kontakt z dzieckiem lub brak
-   4. IV okres porodu:
+   IV Edukacja zdrowotna i wsparcie psychiczne:
     1: Dobra orientacja matki w sprawach zdrowia, samopielęgnacji w połogu, opieki nad dzieckiem, dobry kontakt z otoczeniem
     2: Matka wymaga pomocy w spożyciu posiłku, wymaga informacji  o samopielęgnacji  w połogu, pielęgnacji noworodka, wymaga wsparcia osób bliskich
     3: Brak orientacji matki w sprawach zdrowotnych, wymaga wsparcia psychicznego  ze strony położnej
@@ -234,7 +278,7 @@ POL:
     1: nie wymaga podawania leków
     2: otrzymuje leki doustnie, domięśniowo, podskórnie, doodbytniczo
     3: otrzymuje leki dożylnie, ma podłączoną kroplówkę, może być przetaczana krew
-   Edukacja zdrowotna i wsparcie psychiczne:
+   Edukacja i wsparcie psychiczne:
     1: położnica zna zasady pielęgnacji noworodka, karmienia piersią  i zdrowego stylu życia w okresie połogu, nie wymaga wsparcia psychicznego, ma dobry kontakt z dzieckiem, chętnie karmi piersią
     2: położnica ma słabą orientację na temat pielęgnacji noworodka, karmienia piersią i zdrowego stylu życia w okresie połogu, wymaga wsparcia położnej i osób bliskich, nie jest przekonana do karmienia piersi
     3: położnica nie zna zasad pielęgnacji noworodka, nie jest przekonana do karmienia piersią i nie zna techniki karmienia oraz zasad zdrowego stylu życia w okresie połogu, wymaga edukacji w tym zakresie, brak kontaktu z dzieckiem, wymaga profesjonalnego wsparcia psychicznego (dziecko urodzone w stanie ciężkim, z wadą lub zmarło)
