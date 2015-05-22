@@ -52,7 +52,7 @@ namespace Punction\Entities;
  *        "patientpsy" = "PatientPSY",
  *        "patientdia" = "PatientDIA",
  *        "patientpor" = "PatientPOR",
- *        "patientpor" = "PatientPOL"
+ *        "patientpol" = "PatientPOL"
  *        })
  */
 class Patient {
