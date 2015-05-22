@@ -59,19 +59,4 @@ class PatientBuilder
         return $patient;
     }
     
-    // TO DEL
-    /*
-     * public static function toDatatablesString($patient)
-     * {
-     * $string = "";
-     * foreach (get_object_vars($patient) as $key => $value) {
-     * if ($value instanceof \DateTime) {
-     * $value = $value->format('Y-m-d');
-     * }
-     * $string .= $value . ",";
-     * }
-     * $string = str_replace("\n", "", trim($string, ","));
-     * return $string;
-     * }
-     */
 }
