@@ -54,12 +54,15 @@ class Menu
      */
     static function mypatientsPageCallback()
     {
-        // TODO(AM) po postawieniu serwera DNS usuń przekierowanie ze starego adresu
-        if (! empty($_GET['page']) && $_GET['page'] == 'categorization') {
-            echo '<a href="edit.php?post_type=pacjent&page=moi-pacjenci"><br/><h1> KLIKNIJ TUTAJ BY PRZEJŚĆ DO NOWEJ STRONY KATEGORYZACJI </h1></a>';
-            return;
-        }
         include __DIR__ . '/../pages/' . 'punction-mypatients.php';
+    }
+    
+    /**
+     * mypatientsPageCallback
+     */
+    static function addPatientPageCallback()
+    {
+    	include __DIR__ . '/../pages/' . 'punction-add-patient.php';
     }
 
     /**

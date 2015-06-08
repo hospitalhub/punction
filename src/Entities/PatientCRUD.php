@@ -108,5 +108,24 @@ class PatientCRUD
         $entityManager->flush();
         return $patient;
     }
+    
+    /**
+     * setPatientCategories
+     *
+     * @param Patient $obj
+     *
+     * @return Patient
+     */
+    public static function createPatient($type, $name, $pesel)
+    {
+    	$entityManager = DoctrineBootstrap::getEntityManager();
+    	$type = 'Punction\Entities\Patient' . $type;
+    	$patient = new $type;
+    	$patient->setName($name);
+    	$patient->setPesel($pesel);
+    	$entityManager->persist($patient);
+    	$entityManager->flush();
+    	return $patient;
+    }
 }
 ?>

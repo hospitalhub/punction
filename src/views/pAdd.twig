@@ -1,0 +1,13 @@
+{% include 'pNavbar.twig' %} {% set excludes = ['typ', 'oddzialId'] %}
+{% set replacements = {'dataKategoryzacji':'dataKategoryzacji.date'} %}
+{% set titles = {'name':'Nazwisko i Imię', 'pesel':'PESEL',
+'numerHistorii': 'Nr Historii', 'dataKategoryzacji' : 'Data',
+'kategoriaPacjenta': 'Kategoria'} %} {% set patientColumns =
+patientClass|props(excludes,replacements,titles) %}
+<script>
+    var patientColumns = JSON.parse('{{ patientColumns|json_encode|raw }}');
+    var patientsData =  JSON.parse('{{ patients|json_encode|raw }}');
+    var wardType = '{{ wardType }}';
+</script>
+
+{{patientClass}}

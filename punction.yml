@@ -11,13 +11,20 @@ menus:
     link:       moi-pacjenci
     class:      Punction\WP\Menu
     callback:   mypatientsPageCallback
- 
+
   - title:      Kategoryzacja
     type:		submenu
     cap:        edit_pacjents
     link:       categorization
     class:      Punction\WP\Menu
     callback:   mypatientsPageCallback
+ 
+  - title:      Dodaj Pacjenta
+    type:		submenu
+    cap:        edit_pacjents
+    link:       add-patient
+    class:      Punction\WP\Menu
+    callback:   addPatientPageCallback
 
   - title:      Raport
     type:   submenu
