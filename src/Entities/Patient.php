@@ -71,12 +71,12 @@ class Patient {
 	
 	/**
 	 * name
-	 * @Column(type="string", length="50") *
+	 * @Column(type="string", length=50)
 	 */
 	public $name;
 	
 	/**
-	 * @Column(type="string", length="11") *
+	 * @Column(type="string", length=11)
 	 */
 	public $pesel;
 	
@@ -293,10 +293,8 @@ class Patient {
 		}
 		return $txt;
 	}
-	
-	public function __toString()
-	{
-		return $this->toString();
+	public function __toString() {
+		return $this->toString ();
 	}
 	
 	/**
