@@ -1,0 +1,6 @@
+!1 : NOWY PACJENT
+!2 : 
+%Data : <input type="text" class="datepicker-month" name="dataKategoryzacji" style="width: 100px;" /> Pozostaw puste pole, aby dodać pacjenta dzisiaj lub wypełnij w formacie RRRR-MM-DD
+NAME : Nazwisko i imię
+PESEL : numer PESEL
+NUMERHISTORII :  Numer Historii

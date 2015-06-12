@@ -103,8 +103,8 @@ function import_pacjentow($plik, $oddzialy, $data_importu) {
 			}
 			// oddzialy
 			if (in_array ( $oddz, $oddzialy ) && ! $wypisany) {
-				$typ = 'Punction\Entities\Patient' . get_typ ()[$oddz];
-				$p = new $typ ();
+				$typ = 'Punction\Entities\Patient' . get_typ () [$oddz];
+				$p = new $typ ( 0 );
 				$d = DateTime::createFromFormat ( "Y-m-d", $data_importu );
 				$p->setDataKategoryzacji ( $d );
 				$p->setOddzialId ( $oddzialy_arr [$oddz] );

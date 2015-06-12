@@ -32,13 +32,8 @@ use Hospitalplugin\Entities\WardCRUD;
 Twig_Autoloader::register();
 $loader = new Twig_Loader_Filesystem(__DIR__ . '/../views/');
 $twig = new Twig_Environment($loader, array());
-// XXX(AM) only for debugging
-// 'debug' => true
-// 'cache' => '/tmp/'
 $twig->addExtension(new EscapePLCharsExtension());
 $twig->addExtension(new GetPropertiesExtension());
-// XXX(AM) only for debugging
-// $twig->addExtension(new Twig_Extension_Debug());
 $userId = wp_get_current_user()->ID;
 $oddzial = WardCRUD::getWardForUser($userId);
 $dateParam = (! empty($_GET['date']) ? $_GET['date'] : 0);
@@ -52,7 +47,7 @@ echo $twig->render('pList.twig', array(
     'oddzial' => $oddzial->getName(),
     'kod' => $oddzial->getInfomedica(),
     'wardType' => $oddzial->getTypOddzialu(),
-    'patientClass' => new $patientClass(),
+    'patientClass' => new $patientClass(0),
     'patients' => PatientCRUD::getPatientsDateRange($date['startDate'], $date['endDate'], $oddzial->getId()),
     'categories' => $categories[$oddzial->getTypOddzialu()]
 ));

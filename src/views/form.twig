@@ -1,0 +1,45 @@
+<div class="panel panel-default" style="margin: 20px; padding: 20px;">
+	<div class="panel panel-default">
+		<div class="alert alert-danger" role="alert">
+			<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+			Pacjenci pobierani są z Ruchu Chorych.
+			Dopisywanie pacjentów powinno być używane w wyjątkowych przypadkach. 
+		</div>
+		<div>
+			<table>
+				<form method="post">{% for sym,infection in infections %} {% if sym
+					matches '/^!\\d+$/'%}
+			</table>
+		</div>
+		<div class="panel panel-default">
+			<!-- Default panel contents -->
+			<div class="panel-heading">
+				<h3>
+					<span class="label label-primary">{{ infection|raw }}</span>
+				</h3>
+			</div>
+			<table class="table">
+				<tr>
+					{% elseif sym matches '/^%/'%}
+					<td class="alert alert-info" style="width: 100px;"><div
+							class="label label-primary">{{ sym|escapePL|replace({'%':''}) }}</div></td>
+					<td colspan="2" class="alert alert-success">{{ infection|raw }}</td>
+					{% else %}
+					<td class="alert alert-info" style="width: 100px;"><div
+							class="label label-primary">{{ sym }}</div></td>
+					<td class="alert alert-success" style="width: 100px;"><input
+						type="text" style="width: 180px;" name="{{ sym|escapePL }}"
+						value="" /></td>
+					<td class="alert alert-warning">{{ infection|raw }}</td> {% endif
+					%}
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+		<button type="submit" class="btn btn-primary">
+			<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+			Prześlij
+		</button>
+		</form>
+	</div>
+</div>

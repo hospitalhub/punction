@@ -97,9 +97,38 @@ class Patient {
 	protected $oddzialId;
 	
 	/**
-	 * @Column(columnDefinition="TINYINT(4) NOT NULL DEFAULT 0") *
+	 * @Column(columnDefinition="TINYINT(4) NOT NULL DEFAULT 0")
 	 */
-	public $kategoriaPacjenta;
+	public $kategoriaPacjenta = 0;
+	
+	/**
+	 * IF PATIENT WAS ADDED BY THE USER
+	 * JEŻELI PACJENT DOPISANY PRZEZ UŻYTKOWNIKA
+	 *
+	 * @ManyToOne(targetEntity="Hospitalplugin\Entities\User")
+	 * @JoinColumn(name="userId", referencedColumnName="id")
+	 */
+	protected $user;
+	
+	/**
+	 * Constructor
+	 *
+	 * @param unknown $args        	
+	 */
+	function __construct($args) {
+		if (!isset ( $args ) || empty ( $args )) {
+			return;
+		}
+		foreach ( $args as $key => $value ) {
+			if ($key == 'dataKategoryzacji') {
+				$value = new \DateTime ( $value . ' 12:00:00' );
+			}
+			call_user_func ( array (
+					$this,
+					'set' . $key 
+			), $value );
+		}
+	}
 	
 	/**
 	 * getId
@@ -190,6 +219,15 @@ class Patient {
 	}
 	
 	/**
+	 *
+	 * @param Ward $ward        	
+	 */
+	public function setWard($ward) {
+		$this->oddzialId = $ward->id;
+		return $this;
+	}
+	
+	/**
 	 * getOddzialId
 	 *
 	 * @return oddzialId
@@ -273,6 +311,22 @@ class Patient {
 	 */
 	public function setTyp($typ) {
 		$this->typ = $typ;
+		return $this;
+	}
+	
+	/**
+	 * getUser
+	 */
+	public function getUser() {
+		return $this->user;
+	}
+	
+	/**
+	 *
+	 * @param User $user        	
+	 */
+	public function setUser($user) {
+		$this->user = $user;
 		return $this;
 	}
 	
