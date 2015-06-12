@@ -32,7 +32,7 @@ function get_typ() {
 			"OKUL" => "ZZ",
 			"ORTOP" => "ZZ",
 			"PATOL" => "ZZ",
-			"POLOZ" => "ZZ",
+			"POLOZ" => "POL",
 			"PSYCH" => "PSY",
 			"RATUN" => "OIOM",
 			"REHAB" => "ZZ",
@@ -148,7 +148,8 @@ function patients_import($plik, $data_importu) {
 			'CHIDZ',
 			'GASTD',
 			'PSYCH',
-			'NEF' 
+			'NEF',
+			'POLOZ'
 	);
 	if (file_exists ( $plik )) {
 		$new_plik = $plik . 'ok';
