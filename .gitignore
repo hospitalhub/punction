@@ -7,3 +7,4 @@
 /.buildpath
 /composer.phar
 /bin/
+/node_modules/

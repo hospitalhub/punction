@@ -117,7 +117,7 @@ class PatientPOR extends Patient {
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iAsp;
+	public $iASP;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
@@ -145,115 +145,115 @@ class PatientPOR extends Patient {
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiCzas;
+	public $iICzas;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiPozycja;
+	public $iIPozycja;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiCzystoscKrocza;
+	public $iICzystoscKrocza;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiNaciecie;
+	public $iINaciecie;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiAktywnosc;
+	public $iIAktywnosc;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiHigiena;
+	public $iIHigiena;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiDieta;
+	public $iIDieta;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiPomiarParametrowZyciowych;
+	public $iIPomiarParametrowZyciowych;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiASP;
+	public $iIASP;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiWydalanie;
+	public $iIWydalanie;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiLeki;
+	public $iILeki;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiEdukacjaZdrowotnaIWsparciePsychiczne;
+	public $iIEdukacjaZdrowotnaIWsparciePsychiczne;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiiApgar;
+	public $iIIApgar;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiiWaga;
+	public $iIIWaga;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiiKontakt;
+	public $iIIKontakt;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiiZabiegi;
+	public $iIIZabiegi;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiiKrwawienie;
+	public $iIIKrwawienie;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiiNaciecie;
+	public $iIINaciecie;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiiHigiena;
+	public $iIIHigiena;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiiDieta;
+	public $iIIDieta;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiiPomiarParametrowZyciowych;
+	public $iIIPomiarParametrowZyciowych;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiiWydalanie;
+	public $iIIWydalanie;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiiLeki;
+	public $iIILeki;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $iiiEdukacjaZdrowotnaIWsparciePsychiczne;
+	public $iIIEdukacjaZdrowotnaIWsparciePsychiczne;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $ivObserwacja;
+	public $iVObserwacja;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $ivPomiarParametrowZyciowych;
+	public $iVPomiarParametrowZyciowych;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $ivKarmienie;
+	public $iVKarmienie;
 	/**
 	 * @Column(columnDefinition="TINYINT(4) DEFAULT 0")
 	 */
-	public $ivEdukacjaZdrowotnaIWsparciePsychiczne;
+	public $iVEdukacjaZdrowotnaIWsparciePsychiczne;
 	
 	
 	
@@ -278,41 +278,41 @@ class PatientPOR extends Patient {
 				"iHigiena",
 				"iDieta",
 				"iPomiarParametrowZyciowych",
-				"iAsp",
+				"iASP",
 				"iPostepPorodu",
 				"iWydalanie",
 				"iPecherzPlodowy",
 				"iCwiczeniaOddechowe",
 				"iLeki",
 				"iEdukacjaZdrowotnaIWsparciePsychiczne",
-				"iiCzas",
-				"iiPozycja",
-				"iiCzystoscKrocza",
-				"iiNaciecie",
-				"iiAktywnosc",
-				"iiHigiena",
-				"iiDieta",
-				"iiPomiarParametrowZyciowych",
-				"iiASP",
-				"iiWydalanie",
-				"iiLeki",
-				"iiEdukacjaZdrowotnaIWsparciePsychiczne",
-				"iiiApgar",
-				"iiiWaga",
-				"iiiKontakt",
-				"iiiZabiegi",
-				"iiiKrwawienie",
-				"iiiNaciecie",
-				"iiiHigiena",
-				"iiiDieta",
-				"iiiPomiarParametrowZyciowych",
-				"iiiWydalanie",
-				"iiiLeki",
-				"iiiEdukacjaZdrowotnaIWsparciePsychiczne",
-				"ivObserwacja",
-				"ivPomiarParametrowZyciowych",
-				"ivKarmienie",
-				"ivEdukacjaZdrowotnaIWsparciePsychiczne" 
+				"iICzas",
+				"iIPozycja",
+				"iICzystoscKrocza",
+				"iINaciecie",
+				"iIAktywnosc",
+				"iIHigiena",
+				"iIDieta",
+				"iIPomiarParametrowZyciowych",
+				"iIASP",
+				"iIWydalanie",
+				"iILeki",
+				"iIEdukacjaZdrowotnaIWsparciePsychiczne",
+				"iIIApgar",
+				"iIIWaga",
+				"iIIKontakt",
+				"iIIZabiegi",
+				"iIIKrwawienie",
+				"iIINaciecie",
+				"iIIHigiena",
+				"iIIDieta",
+				"iIIPomiarParametrowZyciowych",
+				"iIIWydalanie",
+				"iIILeki",
+				"iIIEdukacjaZdrowotnaIWsparciePsychiczne",
+				"iVObserwacja",
+				"iVPomiarParametrowZyciowych",
+				"iVKarmienie",
+				"iVEdukacjaZdrowotnaIWsparciePsychiczne" 
 		) );
 		return $fields;
 	}
@@ -358,11 +358,11 @@ class PatientPOR extends Patient {
 		$this->iPomiarParametrowZyciowych = $iPomiarParametrowZyciowych;
 		return $this;
 	}
-	public function getIAsp() {
-		return $this->iAsp;
+	public function getIASP() {
+		return $this->iASP;
 	}
-	public function setIAsp($iAsp) {
-		$this->iAsp = $iAsp;
+	public function setIASP($iASP) {
+		$this->iASP = $iASP;
 		return $this;
 	}
 	public function getIPostepPorodu() {
@@ -407,200 +407,200 @@ class PatientPOR extends Patient {
 		$this->iEdukacjaZdrowotnaIWsparciePsychiczne = $iEdukacjaZdrowotnaIWsparciePsychiczne;
 		return $this;
 	}
-	public function getIiCzas() {
-		return $this->iiCzas;
+	public function getIICzas() {
+		return $this->iICzas;
 	}
-	public function setIiCzas($iiCzas) {
-		$this->iiCzas = $iiCzas;
+	public function setIICzas($iICzas) {
+		$this->iICzas = $iICzas;
 		return $this;
 	}
-	public function getIiPozycja() {
-		return $this->iiPozycja;
+	public function getIIPozycja() {
+		return $this->iIPozycja;
 	}
-	public function setIiPozycja($iiPozycja) {
-		$this->iiPozycja = $iiPozycja;
+	public function setIIPozycja($iIPozycja) {
+		$this->iIPozycja = $iIPozycja;
 		return $this;
 	}
-	public function getIiCzystoscKrocza() {
-		return $this->iiCzystoscKrocza;
+	public function getIICzystoscKrocza() {
+		return $this->iICzystoscKrocza;
 	}
-	public function setIiCzystoscKrocza($iiCzystoscKrocza) {
-		$this->iiCzystoscKrocza = $iiCzystoscKrocza;
+	public function setIICzystoscKrocza($iICzystoscKrocza) {
+		$this->iICzystoscKrocza = $iICzystoscKrocza;
 		return $this;
 	}
-	public function getIiNaciecie() {
-		return $this->iiNaciecie;
+	public function getIINaciecie() {
+		return $this->iINaciecie;
 	}
-	public function setIiNaciecie($iiNaciecie) {
-		$this->iiNaciecie = $iiNaciecie;
+	public function setIINaciecie($iINaciecie) {
+		$this->iINaciecie = $iINaciecie;
 		return $this;
 	}
-	public function getIiAktywnosc() {
-		return $this->iiAktywnosc;
+	public function getIIAktywnosc() {
+		return $this->iIAktywnosc;
 	}
-	public function setIiAktywnosc($iiAktywnosc) {
-		$this->iiAktywnosc = $iiAktywnosc;
+	public function setIIAktywnosc($iIAktywnosc) {
+		$this->iIAktywnosc = $iIAktywnosc;
 		return $this;
 	}
-	public function getIiHigiena() {
-		return $this->iiHigiena;
+	public function getIIHigiena() {
+		return $this->iIHigiena;
 	}
-	public function setIiHigiena($iiHigiena) {
-		$this->iiHigiena = $iiHigiena;
+	public function setIIHigiena($iIHigiena) {
+		$this->iIHigiena = $iIHigiena;
 		return $this;
 	}
-	public function getIiDieta() {
-		return $this->iiDieta;
+	public function getIIDieta() {
+		return $this->iIDieta;
 	}
-	public function setIiDieta($iiDieta) {
-		$this->iiDieta = $iiDieta;
+	public function setIIDieta($iIDieta) {
+		$this->iIDieta = $iIDieta;
 		return $this;
 	}
-	public function getIiPomiarParametrowZyciowych() {
-		return $this->iiPomiarParametrowZyciowych;
+	public function getIIPomiarParametrowZyciowych() {
+		return $this->iIPomiarParametrowZyciowych;
 	}
-	public function setIiPomiarParametrowZyciowych($iiPomiarParametrowZyciowych) {
-		$this->iiPomiarParametrowZyciowych = $iiPomiarParametrowZyciowych;
+	public function setIIPomiarParametrowZyciowych($iIPomiarParametrowZyciowych) {
+		$this->iIPomiarParametrowZyciowych = $iIPomiarParametrowZyciowych;
 		return $this;
 	}
-	public function getIiASP() {
-		return $this->iiASP;
+	public function getIIASP() {
+		return $this->iIASP;
 	}
-	public function setIiASP($iiASP) {
-		$this->iiASP = $iiASP;
+	public function setIIASP($iIASP) {
+		$this->iIASP = $iIASP;
 		return $this;
 	}
-	public function getIiWydalanie() {
-		return $this->iiWydalanie;
+	public function getIIWydalanie() {
+		return $this->iIWydalanie;
 	}
-	public function setIiWydalanie($iiWydalanie) {
-		$this->iiWydalanie = $iiWydalanie;
+	public function setIIWydalanie($iIWydalanie) {
+		$this->iIWydalanie = $iIWydalanie;
 		return $this;
 	}
-	public function getIiLeki() {
-		return $this->iiLeki;
+	public function getIILeki() {
+		return $this->iILeki;
 	}
-	public function setIiLeki($iiLeki) {
-		$this->iiLeki = $iiLeki;
+	public function setIILeki($iILeki) {
+		$this->iILeki = $iILeki;
 		return $this;
 	}
-	public function getIiEdukacjaZdrowotnaIWsparciePsychiczne() {
-		return $this->iiEdukacjaZdrowotnaIWsparciePsychiczne;
+	public function getIIEdukacjaZdrowotnaIWsparciePsychiczne() {
+		return $this->iIEdukacjaZdrowotnaIWsparciePsychiczne;
 	}
-	public function setIiEdukacjaZdrowotnaIWsparciePsychiczne($iiEdukacjaZdrowotnaIWsparciePsychiczne) {
-		$this->iiEdukacjaZdrowotnaIWsparciePsychiczne = $iiEdukacjaZdrowotnaIWsparciePsychiczne;
+	public function setIIEdukacjaZdrowotnaIWsparciePsychiczne($iIEdukacjaZdrowotnaIWsparciePsychiczne) {
+		$this->iIEdukacjaZdrowotnaIWsparciePsychiczne = $iIEdukacjaZdrowotnaIWsparciePsychiczne;
 		return $this;
 	}
 	public function getIiiApgar() {
-		return $this->iiiApgar;
+		return $this->iIIApgar;
 	}
-	public function setIiiApgar($iiiApgar) {
-		$this->iiiApgar = $iiiApgar;
+	public function setIiiApgar($iIIApgar) {
+		$this->iIIApgar = $iIIApgar;
 		return $this;
 	}
 	public function getIiiWaga() {
-		return $this->iiiWaga;
+		return $this->iIIWaga;
 	}
-	public function setIiiWaga($iiiWaga) {
-		$this->iiiWaga = $iiiWaga;
+	public function setIiiWaga($iIIWaga) {
+		$this->iIIWaga = $iIIWaga;
 		return $this;
 	}
 	public function getIiiKontakt() {
-		return $this->iiiKontakt;
+		return $this->iIIKontakt;
 	}
-	public function setIiiKontakt($iiiKontakt) {
-		$this->iiiKontakt = $iiiKontakt;
+	public function setIiiKontakt($iIIKontakt) {
+		$this->iIIKontakt = $iIIKontakt;
 		return $this;
 	}
 	public function getIiiZabiegi() {
-		return $this->iiiZabiegi;
+		return $this->iIIZabiegi;
 	}
-	public function setIiiZabiegi($iiiZabiegi) {
-		$this->iiiZabiegi = $iiiZabiegi;
+	public function setIiiZabiegi($iIIZabiegi) {
+		$this->iIIZabiegi = $iIIZabiegi;
 		return $this;
 	}
 	public function getIiiKrwawienie() {
-		return $this->iiiKrwawienie;
+		return $this->iIIKrwawienie;
 	}
-	public function setIiiKrwawienie($iiiKrwawienie) {
-		$this->iiiKrwawienie = $iiiKrwawienie;
+	public function setIiiKrwawienie($iIIKrwawienie) {
+		$this->iIIKrwawienie = $iIIKrwawienie;
 		return $this;
 	}
 	public function getIiiNaciecie() {
-		return $this->iiiNaciecie;
+		return $this->iIINaciecie;
 	}
-	public function setIiiNaciecie($iiiNaciecie) {
-		$this->iiiNaciecie = $iiiNaciecie;
+	public function setIiiNaciecie($iIINaciecie) {
+		$this->iIINaciecie = $iIINaciecie;
 		return $this;
 	}
 	public function getIiiHigiena() {
-		return $this->iiiHigiena;
+		return $this->iIIHigiena;
 	}
-	public function setIiiHigiena($iiiHigiena) {
-		$this->iiiHigiena = $iiiHigiena;
+	public function setIiiHigiena($iIIHigiena) {
+		$this->iIIHigiena = $iIIHigiena;
 		return $this;
 	}
 	public function getIiiDieta() {
-		return $this->iiiDieta;
+		return $this->iIIDieta;
 	}
-	public function setIiiDieta($iiiDieta) {
-		$this->iiiDieta = $iiiDieta;
+	public function setIiiDieta($iIIDieta) {
+		$this->iIIDieta = $iIIDieta;
 		return $this;
 	}
 	public function getIiiPomiarParametrowZyciowych() {
-		return $this->iiiPomiarParametrowZyciowych;
+		return $this->iIIPomiarParametrowZyciowych;
 	}
-	public function setIiiPomiarParametrowZyciowych($iiiPomiarParametrowZyciowych) {
-		$this->iiiPomiarParametrowZyciowych = $iiiPomiarParametrowZyciowych;
+	public function setIiiPomiarParametrowZyciowych($iIIPomiarParametrowZyciowych) {
+		$this->iIIPomiarParametrowZyciowych = $iIIPomiarParametrowZyciowych;
 		return $this;
 	}
 	public function getIiiWydalanie() {
-		return $this->iiiWydalanie;
+		return $this->iIIWydalanie;
 	}
-	public function setIiiWydalanie($iiiWydalanie) {
-		$this->iiiWydalanie = $iiiWydalanie;
+	public function setIiiWydalanie($iIIWydalanie) {
+		$this->iIIWydalanie = $iIIWydalanie;
 		return $this;
 	}
 	public function getIiiLeki() {
-		return $this->iiiLeki;
+		return $this->iIILeki;
 	}
-	public function setIiiLeki($iiiLeki) {
-		$this->iiiLeki = $iiiLeki;
+	public function setIiiLeki($iIILeki) {
+		$this->iIILeki = $iIILeki;
 		return $this;
 	}
 	public function getIiiEdukacjaZdrowotnaIWsparciePsychiczne() {
-		return $this->iiiEdukacjaZdrowotnaIWsparciePsychiczne;
+		return $this->iIIEdukacjaZdrowotnaIWsparciePsychiczne;
 	}
-	public function setIiiEdukacjaZdrowotnaIWsparciePsychiczne($iiiEdukacjaZdrowotnaIWsparciePsychiczne) {
-		$this->iiiEdukacjaZdrowotnaIWsparciePsychiczne = $iiiEdukacjaZdrowotnaIWsparciePsychiczne;
+	public function setIiiEdukacjaZdrowotnaIWsparciePsychiczne($iIIEdukacjaZdrowotnaIWsparciePsychiczne) {
+		$this->iIIEdukacjaZdrowotnaIWsparciePsychiczne = $iIIEdukacjaZdrowotnaIWsparciePsychiczne;
 		return $this;
 	}
-	public function getIvObserwacja() {
-		return $this->ivObserwacja;
+	public function getIVObserwacja() {
+		return $this->iVObserwacja;
 	}
-	public function setIvObserwacja($ivObserwacja) {
-		$this->ivObserwacja = $ivObserwacja;
+	public function setIVObserwacja($iVObserwacja) {
+		$this->iVObserwacja = $iVObserwacja;
 		return $this;
 	}
-	public function getIvPomiarParametrowZyciowych() {
-		return $this->ivPomiarParametrowZyciowych;
+	public function getIVPomiarParametrowZyciowych() {
+		return $this->iVPomiarParametrowZyciowych;
 	}
-	public function setIvPomiarParametrowZyciowych($ivPomiarParametrowZyciowych) {
-		$this->ivPomiarParametrowZyciowych = $ivPomiarParametrowZyciowych;
+	public function setIVPomiarParametrowZyciowych($iVPomiarParametrowZyciowych) {
+		$this->iVPomiarParametrowZyciowych = $iVPomiarParametrowZyciowych;
 		return $this;
 	}
-	public function getIvKarmienie() {
-		return $this->ivKarmienie;
+	public function getIVKarmienie() {
+		return $this->iVKarmienie;
 	}
-	public function setIvKarmienie($ivKarmienie) {
-		$this->ivKarmienie = $ivKarmienie;
+	public function setIVKarmienie($iVKarmienie) {
+		$this->iVKarmienie = $iVKarmienie;
 		return $this;
 	}
-	public function getIvEdukacjaZdrowotnaIWsparciePsychiczne() {
-		return $this->ivEdukacjaZdrowotnaIWsparciePsychiczne;
+	public function getIVEdukacjaZdrowotnaIWsparciePsychiczne() {
+		return $this->iVEdukacjaZdrowotnaIWsparciePsychiczne;
 	}
-	public function setIvEdukacjaZdrowotnaIWsparciePsychiczne($ivEdukacjaZdrowotnaIWsparciePsychiczne) {
-		$this->ivEdukacjaZdrowotnaIWsparciePsychiczne = $ivEdukacjaZdrowotnaIWsparciePsychiczne;
+	public function setIVEdukacjaZdrowotnaIWsparciePsychiczne($iVEdukacjaZdrowotnaIWsparciePsychiczne) {
+		$this->iVEdukacjaZdrowotnaIWsparciePsychiczne = $iVEdukacjaZdrowotnaIWsparciePsychiczne;
 		return $this;
 	}
 	
