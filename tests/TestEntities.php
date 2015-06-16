@@ -38,7 +38,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
         $json = json_decode($p->toDatatablesJSONString());
         $this->assertTrue($json->aktywnoscFizyczna == 1);
         // csv string
-        $this->assertTrue($p->toDatatablesString() == "Jan,83051703671,123,,,1");
+        $this->assertTrue($p->toDatatablesString() == "Jan,83051703671,123,,0,1","db string check, expected:".$p->toDatatablesString());
         // string
         $this->assertEquals($p->toString(),"Jan83051703671", "spodziewany: " . $p->toString());
     }
@@ -60,7 +60,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
     	$json = json_decode($p->toDatatablesJSONString());
     	$this->assertTrue($json->aktywnoscFizyczna == 1,"json AF");
     	// csv string
-    	$this->assertTrue($p->toDatatablesString() == "Jan,83051703671,123,,,1,,,,,,1","db string check, expected:".$p->toDatatablesString());
+    	$this->assertTrue($p->toDatatablesString() == "Jan,83051703671,123,,0,1,,,,,,1","db string check, expected:".$p->toDatatablesString());
     	// string
     	$this->assertEquals($p->toString(),"Jan83051703671", "spodziewany: " . $p->toString());
     }
@@ -97,7 +97,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
         $p->setAktywnoscFizyczna(1);
         $p->setDataKategoryzacji(new \DateTime());
         $json = json_decode($p->toDatatablesJSONString());
-        $patient = new PatientZZ();
+        $patient = new PatientZZ(0);
         $builder->map($patient, $json);
         $this->assertTrue($patient->getAktywnoscFizyczna() == 1);
     }
@@ -115,7 +115,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
         $p->setDataKategoryzacji(new \DateTime());
         // convert
         $json = json_decode($p->toDatatablesJSONString());
-        $patient = new PatientPED();
+        $patient = new PatientPED(0);
         $builder->map($patient, $json);
         // assert
         $this->assertTrue($patient->getAktywnoscFizyczna() == 1);
