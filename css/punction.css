@@ -116,3 +116,13 @@ nav.navbar {
 #wpbody-content {
 	padding-bottom: 0px !important;
 }
+/*
+	bootbox over fancybox
+*/
+.bootbox.modal > .modal-dialog {
+  z-index: 1050 !important;
+}
+
+.fancybox-overlay {
+  z-index: 1000 !important;
+}

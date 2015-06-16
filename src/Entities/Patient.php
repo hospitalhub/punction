@@ -24,6 +24,7 @@
  */
 namespace Punction\Entities;
 
+
 /**
  * Patient
  *
@@ -52,7 +53,8 @@ namespace Punction\Entities;
  *        "patientpsy" = "PatientPSY",
  *        "patientdia" = "PatientDIA",
  *        "patientpor" = "PatientPOR",
- *        "patientpol" = "PatientPOL"
+ *        "patientpol" = "PatientPOL",
+ *        "patientdel" = "PatientDeleted"
  *        })
  */
 class Patient {
@@ -116,7 +118,7 @@ class Patient {
 	 * @param unknown $args        	
 	 */
 	function __construct($args) {
-		if (!isset ( $args ) || empty ( $args )) {
+		if (! isset ( $args ) || empty ( $args )) {
 			return;
 		}
 		foreach ( $args as $key => $value ) {
@@ -416,4 +418,5 @@ class Patient {
 		$string = str_replace ( "\n", "", $string );
 		return $string;
 	}
+	
 }

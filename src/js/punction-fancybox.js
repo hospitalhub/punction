@@ -106,4 +106,43 @@ jQuery(document).ready(
 				clearForm();
 				fillForm(this);
 			});
+			
+			function deletePatient(id) {
+				try {
+					// implementations
+					var data = {
+							'action' : 'delete_action',
+							'id' : id
+						};
+					jQuery.post('admin-ajax.php', data, function(response) {
+						try {
+							var message = response;
+							console.log('RESPONSE: ' + message);
+//							updateTable(response);
+//							close_fancybox();
+						} catch (err) {
+							console.log("ERR: " + err);
+						}
+					});
+				} catch (err) {
+					console.log("ERR: " + err);
+				}
+			}
+			
+			  // Login button click handler
+		    $('#confirm-delete').on('click', function() {
+		    	bootbox.setDefaults({
+		    		locale: "pl"
+		    	});
+		    	bootbox.confirm("Czy na pewno usunąć pacjenta w dniu dzisiejszym?", function(result) {
+		    	    if (result) {
+		    	    	var id  = $('#patient-id').val().replace("\n", "");
+		    	    	deletePatient(id);
+		    	        clearForm();
+		    	        $.fancybox.close();
+		    	    } else {
+		    	        console.log("nie i ch*j");
+		    	    }
+		    	});
+		    });
 		});

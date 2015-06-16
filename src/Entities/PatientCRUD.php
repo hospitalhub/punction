@@ -1,4 +1,5 @@
 <?php
+
 /**
  * PatientCRUD
  *
@@ -28,104 +29,124 @@ use Punction\Entities\Patient;
 use Punction\Entities\PatientFactory;
 use Hospitalplugin\utils\Utils;
 
-class PatientCRUD
-{
-
-    /**
-     * getPatients
-     *
-     * @param int $day   dayOfTheMonth
-     * @param int $month month
-     *
-     * @return Patient array
-     */
-    public static function getPatients($month = null, $day = null, $wardId = 0)
-    {
-        return PatientCRUD::getPatientsDateRange(Utils::getStartDate($month, $day), Utils::getEndDate($month, $day), $wardId);
-    }
-
-    /**
-     * getPatientsDateRange
-     * 
-     * TODO(AM) testy na przypadki graniczne - pacjenci z data przed polnoca, po polnocy, godzina przed obecna, po obecnej
-     *
-     * @param int $day   dayOfTheMonth
-     * @param int $month month
-     *
-     * @return Patient array
-     */
-    public static function getPatientsDateRange($date1, $date2, $wardId = 0)
-    {
-        $entityManager = (object) DoctrineBootstrap::getEntityManager();
-        $params = array(
-            'from' => $date1,
-            'to' => $date2,
-            'oddzialId' => $wardId
-        );
-        $q = $entityManager->createQuery('select p FROM Punction\Entities\Patient p WHERE p.dataKategoryzacji BETWEEN :from AND :to and p.oddzialId = :oddzialId ORDER BY p.name')
-            ->setParameters($params)
-            ->setFirstResult(0)
-            ->setMaxResults(1000);
-        $patients = $q->getResult();
-        return $patients;
-    }
-
-    /**
-     * getPatient
-     * 
-     * @param $id $id int
-     * 
-     * @return Patient Patient
-     */
-    public static function getPatient($id, $type = '')
-    {
-        $entityManager = (object) DoctrineBootstrap::getEntityManager();
-        $type = 'Punction\Entities\Patient' . $type;
-        $patient = $entityManager->getRepository($type)->findOneBy(array(
-            'id' => $id
-        ));
-        return Utils::cast($type, (object) $patient);
-    }
-
-    /**
-     * setPatientCategories
-     * 
-     * @param Patient $obj
-     * 
-     * @return Patient
-     */
-    public static function setPatientCategories($obj, $type)
-    {
-        $entityManager = DoctrineBootstrap::getEntityManager();
-        $patient = PatientCRUD::getPatient($obj->id, $type);
-        foreach (get_object_vars($obj) as $key => $value) {
-            call_user_func(array(
-                $patient,
-                'set' . ucwords($key)
-            ), $value);
-        }
-        $entityManager->merge($patient);
-        $entityManager->flush();
-        return $patient;
-    }
-    
-    /**
-     * setPatientCategories
-     *
-     * @param Patient $obj
-     *
-     * @return Patient
-     */
-    public static function createPatient($type, $name, $pesel)
-    {
-    	$entityManager = DoctrineBootstrap::getEntityManager();
-    	$type = 'Punction\Entities\Patient' . $type;
-    	$patient = new $type;
-    	$patient->setName($name);
-    	$patient->setPesel($pesel);
-    	$entityManager->persist($patient);
-    	$entityManager->flush();
-    	return $patient;
-    }
+class PatientCRUD {
+	
+	/**
+	 * getPatients
+	 *
+	 * @param int $day
+	 *        	dayOfTheMonth
+	 * @param int $month
+	 *        	month
+	 *        	
+	 * @return Patient array
+	 */
+	public static function getPatients($month = null, $day = null, $wardId = 0) {
+		return PatientCRUD::getPatientsDateRange ( Utils::getStartDate ( $month, $day ), Utils::getEndDate ( $month, $day ), $wardId );
+	}
+	
+	/**
+	 * getPatientsDateRange
+	 *
+	 * TODO(AM) testy na przypadki graniczne - pacjenci z data przed polnoca, po polnocy, godzina przed obecna, po obecnej
+	 *
+	 * @param int $day
+	 *        	dayOfTheMonth
+	 * @param int $month
+	 *        	month
+	 *        	
+	 * @return Patient array
+	 */
+	public static function getPatientsDateRange($date1, $date2, $wardId = 0) {
+		$entityManager = ( object ) DoctrineBootstrap::getEntityManager ();
+		$params = array (
+				'from' => $date1,
+				'to' => $date2,
+				'oddzialId' => $wardId 
+		);
+		$q = $entityManager->createQuery ( 'select p FROM Punction\Entities\Patient p WHERE p.dataKategoryzacji BETWEEN :from AND :to and p.oddzialId = :oddzialId ORDER BY p.name' )->setParameters ( $params )->setFirstResult ( 0 )->setMaxResults ( 1000 );
+		$patients = $q->getResult ();
+		return $patients;
+	}
+	
+	/**
+	 * getPatient
+	 *
+	 * @param $id $id
+	 *        	int
+	 *        	
+	 * @return Patient Patient
+	 */
+	public static function getPatient($id, $type = '') {
+		$entityManager = ( object ) DoctrineBootstrap::getEntityManager ();
+		$type = 'Punction\Entities\Patient' . $type;
+		$patient = $entityManager->getRepository ( $type )->findOneBy ( array (
+				'id' => $id 
+		) );
+		return Utils::cast ( $type, ( object ) $patient );
+	}
+	
+	/**
+	 * setPatientCategories
+	 *
+	 * @param Patient $obj        	
+	 *
+	 * @return Patient
+	 */
+	public static function setPatientCategories($obj, $type) {
+		$entityManager = DoctrineBootstrap::getEntityManager ();
+		$patient = PatientCRUD::getPatient ( $obj->id, $type );
+		foreach ( get_object_vars ( $obj ) as $key => $value ) {
+			call_user_func ( array (
+					$patient,
+					'set' . ucwords ( $key ) 
+			), $value );
+		}
+		$entityManager->merge ( $patient );
+		$entityManager->flush ();
+		return $patient;
+	}
+	
+	/**
+	 * setPatientCategories
+	 *
+	 * @param Patient $obj        	
+	 *
+	 * @return Patient
+	 */
+	public static function createPatient($type, $name, $pesel) {
+		$entityManager = DoctrineBootstrap::getEntityManager ();
+		$type = 'Punction\Entities\Patient' . $type;
+		$patient = new $type ();
+		$patient->setName ( $name );
+		$patient->setPesel ( $pesel );
+		$entityManager->persist ( $patient );
+		$entityManager->flush ();
+		return $patient;
+	}
+	
+	/**
+	 * deletePatient
+	 *
+	 * @param $id $id
+	 *        	int
+	 */
+	public static function deletePatient($id, $userid = 0, $type = '') {
+		$entityManager = ( object ) DoctrineBootstrap::getEntityManager ();
+		$type = 'Punction\Entities\Patient' . $type;
+		$patient = $entityManager->getRepository ( $type )->findOneBy ( array (
+				'id' => $id 
+		) );
+		$log = strval ( $patient );
+		$entityManager->remove ( $patient );
+		// save for audit as Deleted
+		$patient = Utils::cast ( 'Punction\Entities\PatientDeleted', $patient );
+		$patient->deletedAt = new \DateTime ();
+		$patient->deletedByUserId = 1;
+		$patient->log = $log;
+		$patient->$entityManager->persist ( $patient );
+		
+		$entityManager->flush ();
+	}
 }
 ?>

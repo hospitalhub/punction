@@ -63,3 +63,4 @@ scripts:
   - bootstrap-select.min.js
   - bootstrap-datepicker.js
   - bootstrap-datepicker.pl.js
+  - bootbox.js
