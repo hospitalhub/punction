@@ -26,7 +26,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
 
     function testGetSetZZ()
     {
-        $p = new PatientZZ();
+        $p = new PatientZZ(0);
         $p->setName("Jan");
         $p->setPesel("83051703671");
         $p->setNumerHistorii("123");
@@ -46,7 +46,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
     
     function testGetSetDIA()
     {
-    	$p = new PatientDIA();
+    	$p = new PatientDIA(0);
     	$p->setName("Jan");
     	$p->setPesel("83051703671");
     	$p->setNumerHistorii("123");
@@ -69,7 +69,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
     
     function testGetSetPED()
     {
-        $p = new PatientPED();
+        $p = new PatientPED(0);
         $p->setName("Janek");
         $p->setPesel("00230301144");
         $p->setNumerHistorii("123");
@@ -90,7 +90,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
     {
         // having
         $builder = new PatientBuilder();
-        $p = new PatientZZ();
+        $p = new PatientZZ(0);
         $p->setName("Jan");
         $p->setPesel("83051703671");
         $p->setNumerHistorii("123");
@@ -106,7 +106,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
     {
         // having
         $builder = new PatientBuilder();
-        $p = new PatientPED();
+        $p = new PatientPED(0);
         $p->setName("Janek");
         $p->setPesel("01251703671");
         $p->setNumerHistorii("321");
@@ -155,7 +155,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
 
     function testDBLoad()
     {
-        $patient = new Patient();
+        $patient = new Patient(0);
         $dql = "SELECT p FROM Punction\Entities\Patient p WHERE p.name like '%'";
         $query = $this->entityManager->createQuery($dql);
         $query->setMaxResults(1);
@@ -171,7 +171,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
 
     function testDBLoad2()
     {
-        $patient = new Patient();
+        $patient = new Patient(0);
         $patient = $this->entityManager->getRepository('Punction\Entities\Patient')->findOneBy(array(
             'numerHistorii' => "123"
         ));
@@ -181,7 +181,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
 
     function testDBLoad3()
     {
-        $patient = new Patient();
+        $patient = new Patient(0);
         $patients = $this->entityManager->getRepository('Punction\Entities\Patient')->findBy(array(
             'numerHistorii' => "123"
         ));

@@ -100,7 +100,7 @@ class TestCRUD extends PHPUnit_Framework_TestCase {
 	}
 	private static function getRandomPatient($typ) {
 		$class = 'Punction\Entities\Patient' . $typ;
-		$patient = new $class ();
+		$patient = new $class (0);
 		$person = PersonGenerator::getRandomPerson ();
 		$patient->setName ( explode ( '|', $person )[0] );
 		$patient->setPesel ( explode ( '|', $person )[1] );

@@ -10,7 +10,7 @@ class PatientBuilder
 
     function __construct()
     {
-        $this->patient = new Patient();
+        $this->patient = new Patient(0);
     }
 
     function name($name)
