@@ -37,13 +37,13 @@ namespace Punction\Entities;
  *      
  * @Entity
  */
-class PatientDeleted extends Patient
+class PatientDeleted
 {
-
-    /**
-     * @var string $typ typ pacjenta
-     */
-    protected $typ = "Deleted";
+	/**
+	 * id
+	 * @Id @Column(type="integer") @GeneratedValue
+	 */
+	public $id;
 
     /**
      *  @ORM\Column(name="order_timestamp", type="datetime")
@@ -51,7 +51,7 @@ class PatientDeleted extends Patient
     public $deletedAt;
     
     /**
-     * @Column(columnDefinition="TINYINT(4) DEFAULT 0") *
+     * @Column(type="integer") *
      */
     public $deletedByUserId;
 

@@ -53,8 +53,7 @@ namespace Punction\Entities;
  *        "patientpsy" = "PatientPSY",
  *        "patientdia" = "PatientDIA",
  *        "patientpor" = "PatientPOR",
- *        "patientpol" = "PatientPOL",
- *        "patientdel" = "PatientDeleted"
+ *        "patientpol" = "PatientPOL"
  *        })
  */
 class Patient {
@@ -340,7 +339,11 @@ class Patient {
 	public function toString() {
 		$txt = $this->getName ();
 		$txt .= $this->getPesel ();
+		$txt .= "id:";
+		$txt .= $this->getId ();
+		$txt .= "oid:";
 		$txt .= $this->getOddzialId ();
+		$txt .= "d:";
 		$data = $this->getDataKategoryzacji ();
 		if ($data instanceof \DateTime) {
 			$txt .= $this->getDataKategoryzacji ()->format ( "Y-m-d" );

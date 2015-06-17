@@ -196,14 +196,15 @@ HTML;
 		// TODO add nonce secutrity
 		$id = $_POST ['id'];
 		try {
-			PatientCRUD::deletePatient ( $id );
+			$userId = wp_get_current_user ()->ID;
+			PatientCRUD::deletePatient ( $id, $userId );
 		} catch ( Exception $e ) {
 			// FIXME Logger
 			echo "zonk";
 			die ();
 			// TODO HANDLE err
 		}
-		echo "siema:" . print_r ( $id );
+		echo $id;
 		die ();
 	}
 }

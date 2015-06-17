@@ -116,10 +116,11 @@ jQuery(document).ready(
 						};
 					jQuery.post('admin-ajax.php', data, function(response) {
 						try {
-							var message = response;
-							console.log('RESPONSE: ' + message);
-//							updateTable(response);
-//							close_fancybox();
+							var id = response.replace("\n", "");
+							console.log('RESPONSE: ' + response);
+							var table = $('#patientsTable').DataTable();
+							var row = table.row($('tr#' + id));
+							row.remove().draw(false);
 						} catch (err) {
 							console.log("ERR: " + err);
 						}

@@ -26,6 +26,7 @@ namespace Punction\Entities;
 
 use Hospitalplugin\DB\DoctrineBootstrap;
 use Punction\Entities\Patient;
+use Punction\Entities\PatientDeleted;
 use Punction\Entities\PatientFactory;
 use Hospitalplugin\utils\Utils;
 
@@ -131,21 +132,19 @@ class PatientCRUD {
 	 * @param $id $id
 	 *        	int
 	 */
-	public static function deletePatient($id, $userid = 0, $type = '') {
+	public static function deletePatient($id, $userId = 0) {
 		$entityManager = ( object ) DoctrineBootstrap::getEntityManager ();
-		$type = 'Punction\Entities\Patient' . $type;
+		$type = 'Punction\Entities\Patient';
 		$patient = $entityManager->getRepository ( $type )->findOneBy ( array (
 				'id' => $id 
 		) );
-		$log = strval ( $patient );
 		$entityManager->remove ( $patient );
-		// save for audit as Deleted
-		$patient = Utils::cast ( 'Punction\Entities\PatientDeleted', $patient );
-		$patient->deletedAt = new \DateTime ();
-		$patient->deletedByUserId = 1;
-		$patient->log = $log;
-		$patient->$entityManager->persist ( $patient );
-		
+		$log = strval($patient);
+		$audit = new PatientDeleted();
+		$audit->deletedAt = new \DateTime ();
+		$audit->deletedByUserId = $userId;
+		$audit->log = $log;
+		$entityManager->persist ( $audit );
 		$entityManager->flush ();
 	}
 }
