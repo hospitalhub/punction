@@ -135,7 +135,7 @@ jQuery(document).ready(
 		    	bootbox.setDefaults({
 		    		locale: "pl"
 		    	});
-		    	bootbox.confirm("Czy na pewno usunąć pacjenta w dniu dzisiejszym?", function(result) {
+		    	bootbox.confirm("Czy na pewno usunąć pacjenta?", function(result) {
 		    	    if (result) {
 		    	    	var id  = $('#patient-id').val().replace("\n", "");
 		    	    	deletePatient(id);
