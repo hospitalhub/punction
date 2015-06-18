@@ -40,7 +40,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
         // csv string
         $this->assertTrue($p->toDatatablesString() == "Jan,83051703671,123,,0,1","db string check, expected:".$p->toDatatablesString());
         // string
-        $this->assertEquals($p->toString(),"Jan83051703671", "spodziewany: " . $p->toString());
+        $this->assertEquals($p->toString(), "spodziewany: " . $p->toString(),"Jan83051703671id:oid:d:");
     }
     
     
@@ -62,7 +62,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
     	// csv string
     	$this->assertTrue($p->toDatatablesString() == "Jan,83051703671,123,,0,1,,,,,,1","db string check, expected:".$p->toDatatablesString());
     	// string
-    	$this->assertEquals($p->toString(),"Jan83051703671", "spodziewany: " . $p->toString());
+    	$this->assertEquals($p->toString(), "spodziewany: " . $p->toString(),"Jan83051703671id:oid:d:");
     }
     
     
