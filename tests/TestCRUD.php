@@ -71,7 +71,7 @@ class TestCRUD extends PHPUnit_Framework_TestCase {
 					$patient2->setOddzialId ( $oddzid );
 					$patient2->setKategoriaPacjenta ( 1 );
 					$patient2->setNumerHistorii ( rand ( 100, 999 ) );
-					$patient2 = Utils::cast ( $patient1, $patient2 );
+					$patient2 = Utils::cast ( $patient1, $patient2, 0 );
 					$patient2->setAktywnoscFizyczna ( 1 );
 					$this->entityManager->persist ( $patient2 );
 					$this->entityManager->flush ();

@@ -84,7 +84,7 @@ class PatientCRUD {
 		$patient = $entityManager->getRepository ( $type )->findOneBy ( array (
 				'id' => $id 
 		) );
-		return Utils::cast ( $type, ( object ) $patient );
+		return Utils::cast ( $type, ( object ) $patient, 0 );
 	}
 	
 	/**
