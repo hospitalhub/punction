@@ -145,7 +145,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
     {
         $patient = TestEntities::getRandomPatient();
         $patient->setDataKategoryzacji(new \DateTime("now"));
-        $patient->setOddzialId(1);
+        $patient->setOddzialId(123);
         $patient->setKategoriaPacjenta(1);
         $patient->setNumerHistorii("123");
         $this->entityManager->persist($patient);
