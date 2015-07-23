@@ -88,7 +88,7 @@ class TestCRUD extends PHPUnit_Framework_TestCase {
 	}
 	function randomDate($start_date, $end_date) {
 		$min = strtotime ( $start_date->format ( 'Y-m-d' ) );
-		$max = strtotime ( $end_date->format ( 'Y-m-d' ) );
+		$max = strtotime ( $end_date->format ( 'Y-m-d 23:59:59' ) );
 		
 		$val = rand ( $min, $max );
 		$date = new \DateTime ( 'now' );

@@ -21,7 +21,7 @@ class PatientRaport
         
         $result = $em->createQuery($dql)
             ->setParameter(1, $startDate)
-            ->setParameter(2, date("Y-m-t", strtotime($startDate)))
+            ->setParameter(2, date("Y-m-t 23:59:59", strtotime($startDate)))
             ->setParameter(3, $wardId)
             ->getResult();
         
