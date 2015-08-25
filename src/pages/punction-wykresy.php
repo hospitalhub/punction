@@ -4,6 +4,7 @@ use Punction\Entities\Patient;
 use Hospitalplugin\DQLFunctions\DateFunction;
 use Punction\Entities\PatientRaport;
 use Hospitalplugin\Entities\WardCRUD;
+use Punction\utils\ExcelExport;
 
 $wards = WardCRUD::getWardsArray();
 $wardId = (! empty($_POST['wardId']) ? $_POST['wardId'] : 0);
@@ -20,3 +21,5 @@ echo $twig->render('pWykresy.twig', array(
     'date' => $date,
     'wardId' => $wardId
 ));
+
+ExcelExport::excel_export();
