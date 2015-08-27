@@ -1,5 +1,5 @@
 <?php
-use Punction\Entities\PatientCRUD;
+use Hospitalplugin\Entities\PatientCRUD;
 use Symfony\Component\Yaml\Yaml;
 use Hospitalplugin\Twig\EscapePLCharsExtension;
 use Hospitalplugin\Twig\GetPropertiesExtension;
@@ -38,7 +38,7 @@ $twig->addExtension ( new GetPropertiesExtension () );
 $userId = wp_get_current_user ()->ID;
 $oddzial = WardCRUD::getWardForUser ( $userId );
 
-$patientClass = 'Punction\Entities\Patient' . $oddzial->getTypOddzialu ();
+$patientClass = 'Hospitalplugin\Entities\Patient' . $oddzial->getTypOddzialu ();
 HospitalForm::load ( __DIR__ . '/../../resources/Patient.yml', $patientClass, __DIR__ . '/../views/' );
 
 if (! empty ( $_POST )) {

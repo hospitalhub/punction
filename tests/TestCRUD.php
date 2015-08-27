@@ -1,10 +1,10 @@
 <?php
-use Punction\Entities\Patient;
+use Hospitalplugin\Entities\Patient;
 use Hospitalplugin\DB\DoctrineBootstrap;
-use Punction\Entities\PatientZZ;
-use Punction\Entities\PatientPED;
-use Punction\Entities\PatientBuilder;
-use Punction\Entities\PatientCRUD;
+use Hospitalplugin\Entities\PatientZZ;
+use Hospitalplugin\Entities\PatientPED;
+use Hospitalplugin\Entities\PatientBuilder;
+use Hospitalplugin\Entities\PatientCRUD;
 use Hospitalplugin\utils\Utils;
 use Hospitalplugin\utils\PersonGenerator;
 use Hospitalplugin\Entities\WardCRUD;
@@ -96,7 +96,7 @@ class TestCRUD extends PHPUnit_Framework_TestCase {
 		return $date;
 	}
 	private static function getRandomPatient($typ) {
-		$class = 'Punction\Entities\Patient' . $typ;
+		$class = 'Hospitalplugin\Entities\Patient' . $typ;
 		$patient = new $class ( 0 );
 		$person = PersonGenerator::getRandomPerson ();
 		$patient->setName ( explode ( '|', $person ) [0] );

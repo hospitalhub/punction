@@ -24,10 +24,10 @@
  */
 namespace Punction\WP;
 
-use Punction\Entities\PatientPED;
-use Punction\Entities\PatientCRUD;
-use Punction\Entities\PatientBuilder;
-use Punction\Entities\Patient;
+use Hospitalplugin\Entities\PatientPED;
+use Hospitalplugin\Entities\PatientCRUD;
+use Hospitalplugin\Entities\PatientBuilder;
+use Hospitalplugin\Entities\Patient;
 
 /**
  * Actions

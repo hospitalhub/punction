@@ -14,10 +14,13 @@
 use Punction\WP\Actions;
 use Hospitalplugin\WP\ScriptsAndStyles;
 use Hospitalplugin\WP\Menu;
+use Hospitalplugin\utils\ExcelExport;
 use Symfony\Component\Yaml\Yaml;
 require_once WP_CONTENT_DIR . "/../vendor/autoload.php";
 
 $cfg = Yaml::parse(file_get_contents(__DIR__ . '/punction.yml'));
+
+ExcelExport::init();
 
 $menuPnct = new Menu();
 $hsac = new ScriptsAndStyles();

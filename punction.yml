@@ -4,7 +4,7 @@ pages:
   - pacjent_page_moi-pacjenci
   - pacjent_page_raport
   - pacjent_page_add-patient
-  - pacjent_page_wykresy
+  - pacjent_page_excel
 menus:
   - title:      Moi Pacjenci
     type:		submenu
@@ -34,12 +34,12 @@ menus:
     class:      Punction\WP\Menu
     callback:   raportCallback
 
-  - title:      Wykresy
+  - title:      Excel
     type:   submenu
     cap:        read_pacjenci_wszystkie_oddz
-    link:       wykresy
+    link:       excel
     class:      Punction\WP\Menu
-    callback:   wykresyCallback
+    callback:   excelCallback
 menu-remove:
   - url:        *url
     page:       post-new.php?post_type=pacjent

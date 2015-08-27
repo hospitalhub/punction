@@ -1,11 +1,11 @@
 <?php
-use Punction\Entities\Patient;
+use Hospitalplugin\Entities\Patient;
 use Hospitalplugin\DB\DoctrineBootstrap;
-use Punction\Entities\PatientZZ;
-use Punction\Entities\PatientPED;
-use Punction\Entities\PatientBuilder;
+use Hospitalplugin\Entities\PatientZZ;
+use Hospitalplugin\Entities\PatientPED;
+use Hospitalplugin\Entities\PatientBuilder;
 use Hospitalplugin\utils\PersonGenerator;
-use Punction\Entities\PatientDIA;
+use Hospitalplugin\Entities\PatientDIA;
 
 class TestEntities extends PHPUnit_Framework_TestCase
 {
@@ -156,7 +156,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
     function testDBLoad()
     {
         $patient = new Patient(0);
-        $dql = "SELECT p FROM Punction\Entities\Patient p WHERE p.name like '%'";
+        $dql = "SELECT p FROM Hospitalplugin\Entities\Patient p WHERE p.name like '%'";
         $query = $this->entityManager->createQuery($dql);
         $query->setMaxResults(1);
         $patients = $query->getResult();
@@ -172,7 +172,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
     function testDBLoad2()
     {
         $patient = new Patient(0);
-        $patient = $this->entityManager->getRepository('Punction\Entities\Patient')->findOneBy(array(
+        $patient = $this->entityManager->getRepository('Hospitalplugin\Entities\Patient')->findOneBy(array(
             'numerHistorii' => "123"
         ));
         $this->assertTrue($patient->getId() > 0);
@@ -182,7 +182,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
     function testDBLoad3()
     {
         $patient = new Patient(0);
-        $patients = $this->entityManager->getRepository('Punction\Entities\Patient')->findBy(array(
+        $patients = $this->entityManager->getRepository('Hospitalplugin\Entities\Patient')->findBy(array(
             'numerHistorii' => "123"
         ));
         $i = 0;
@@ -205,7 +205,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
     {
         $qb = $this->entityManager->createQueryBuilder();
         $q = $qb->select('p') ->
-	/* */ from('Punction\Entities\Patient', 'p')->
+	/* */ from('Hospitalplugin\Entities\Patient', 'p')->
 	/* */ where('p.kategoriaPacjenta = ?1')->
 	/* */ setParameter(1, '1')->
 	/* */ orderBy('p.name')->

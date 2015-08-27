@@ -1,8 +1,8 @@
 <?php
 use Hospitalplugin\DB\DoctrineBootstrap;
-use Punction\Entities\Patient;
+use Hospitalplugin\Entities\Patient;
 use Hospitalplugin\DQLFunctions\DateFunction;
-use Punction\Entities\PatientRaport;
+use Hospitalplugin\Entities\PatientRaport;
 use Hospitalplugin\Entities\WardCRUD;
 
 $wards = WardCRUD::getWardsArray();

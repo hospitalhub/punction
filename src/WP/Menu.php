@@ -77,9 +77,9 @@ class Menu
     /**
      * mypatientsPageCallback
      */
-    static function wykresyCallback()
+    static function excelCallback()
     {
-    	include __DIR__ . '/../pages/' . 'punction-wykresy.php';
+    	include __DIR__ . '/../pages/' . 'punction-excel.php';
     }
 }
 ?>

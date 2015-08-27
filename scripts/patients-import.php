@@ -1,8 +1,8 @@
 <?php
-use Punction\Entities\PatientZZ;
-use Punction\Entities\PatientDIA;
-use Punction\Entities\PatientPED;
-use Punction\Entities\PatientPSY;
+use Hospitalplugin\Entities\PatientZZ;
+use Hospitalplugin\Entities\PatientDIA;
+use Hospitalplugin\Entities\PatientPED;
+use Hospitalplugin\Entities\PatientPSY;
 use Hospitalplugin\DB\DoctrineBootstrap;
 use Hospitalplugin\utils\Utils;
 
@@ -103,7 +103,7 @@ function import_pacjentow($plik, $oddzialy, $data_importu) {
 			}
 			// oddzialy
 			if (in_array ( $oddz, $oddzialy ) && ! $wypisany) {
-				$typ = 'Punction\Entities\Patient' . get_typ () [$oddz];
+				$typ = 'Hospitalplugin\Entities\Patient' . get_typ () [$oddz];
 				$p = new $typ ( 0 );
 				$d = DateTime::createFromFormat ( "Y-m-d", $data_importu );
 				$p->setDataKategoryzacji ( $d );

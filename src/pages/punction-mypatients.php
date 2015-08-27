@@ -1,5 +1,5 @@
 <?php
-use Punction\Entities\PatientCRUD;
+use Hospitalplugin\Entities\PatientCRUD;
 use Symfony\Component\Yaml\Yaml;
 use Hospitalplugin\Twig\EscapePLCharsExtension;
 use Hospitalplugin\Twig\GetPropertiesExtension;
@@ -42,7 +42,7 @@ $categoriesFile = __DIR__ . '/../../resources/categories.yml';
 $categories = Yaml::parse(file_get_contents($categoriesFile));
 
 // LISTA PACJ
-$patientClass = 'Punction\Entities\Patient' . $oddzial->getTypOddzialu();
+$patientClass = 'Hospitalplugin\Entities\Patient' . $oddzial->getTypOddzialu();
 echo $twig->render('pList.twig', array(
     'oddzial' => $oddzial->getName(),
     'kod' => $oddzial->getInfomedica(),
