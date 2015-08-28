@@ -8,7 +8,7 @@ use Hospitalplugin\Entities\WardCRUD;
 $wards = WardCRUD::getWardsArray();
 $wardId = (! empty($_POST['wardId']) ? $_POST['wardId'] : 0);
 $date = (! empty($_POST['date']) ? $_POST['date'] : (new DateTime())->format("Y-m"));
-$raport = PatientRaport::getRaport($wardId, $date);
+$raport = PatientRaport::getRaport($wardId, $date, '');
 
 Twig_Autoloader::register();
 $loader = new Twig_Loader_Filesystem(__DIR__ . '/../views/');
