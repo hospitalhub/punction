@@ -19,8 +19,7 @@
 		"symfony/yaml" : "*",
 		"amarcinkowski/hospitalplugin" : "*",
 		"phpoffice/phpexcel" : "*",
-		"twig/twig" : "*",
-		"apache/log4php" : "2.3.0"
+		"twig/twig" : "*"
 	},
 	"require-dev" : {
 		"phpunit/phpunit" : "4.1.*",
