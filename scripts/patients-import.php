@@ -42,7 +42,9 @@ function get_typ() {
 			"SZCZ" => "ZZ",
 			"UDARO" => "ZZ",
 			"UROL" => "ZZ",
-			"ZAKDO" => "ZZ" 
+			"ZAKDO" => "ZZ",
+			"SD" => "DIA",
+			"SDO" => "DIA"
 	);
 }
 function get_oddzialy_arr() {
@@ -74,13 +76,16 @@ function get_oddzialy_arr() {
 			"SZCZ" => 1648,
 			"UDARO" => 3262,
 			"UROL" => 1667,
-			"ZAKDO" => 1657 
+			"ZAKDO" => 1657,
+			"SD" => 37001,
+			"SDO" => 37001
 	);
 }
 function import_pacjentow($plik, $oddzialy, $data_importu) {
 	$entityManager = ( object ) DoctrineBootstrap::getEntityManager ();
+	$patientHashSet = array();
 	global $log;
-	$log->info ( "IMPORT: " . $data_importu );
+	$log->info( "IMPORT: " . $data_importu );
 	$oddzialy_arr = get_oddzialy_arr ();
 	$row = 1;
 	if (($uchwyt = fopen ( $plik, "r" )) !== FALSE) {
@@ -105,13 +110,20 @@ function import_pacjentow($plik, $oddzialy, $data_importu) {
 			if (in_array ( $oddz, $oddzialy ) && ! $wypisany) {
 				$typ = 'Hospitalplugin\Entities\Patient' . get_typ () [$oddz];
 				$p = new $typ ( 0 );
-				$d = DateTime::createFromFormat ( "Y-m-d", $data_importu );
-				$p->setDataKategoryzacji ( $d );
 				$p->setOddzialId ( $oddzialy_arr [$oddz] );
 				$p->setName ( $naz_imie );
 				$p->setPesel ( $pesel );
 				$p->setNumerHistorii ( $nr );
 				$p->setKategoriaPacjenta ( 0 );
+				$patientMD5 =  hash("md5", $p->toString(), false);
+				if (array_key_exists($patientMD5,$patientHashSet)) {
+				  // echo "\nTRACE patient already added " . $p->toString(); 
+				  continue;
+				} else {
+				  $patientHashSet[$patientMD5] = true;
+				}
+				$d = DateTime::createFromFormat ( "Y-m-d", $data_importu );
+				$p->setDataKategoryzacji ( $d );
 				$log->info ( "pac " . $p->toString () );
 				$entityManager->persist ( $p );
 				$entityManager->flush ();
@@ -149,7 +161,9 @@ function patients_import($plik, $data_importu) {
 			'GASTD',
 			'PSYCH',
 			'NEF',
-			'POLOZ'
+			'POLOZ',
+			'SD',
+			'SDO'
 	);
 	if (file_exists ( $plik )) {
 		$new_plik = $plik . 'ok';
@@ -166,13 +180,14 @@ if (! isset ( $argv [1] )) {
 	$plik = $argv [1];
 }
 if (! file_exists ( $plik )) {
-	$log->info ( "Brak pliku " . $plik );
+	$log->info( "Brak pliku " . $plik );
 	return;
 } else {
-	$log->info ( "Plik: " . $plik );
+	$log->info( "Plik: " . $plik );
 }
 $data_importu = date ( 'Y-m-d' ); // 2014-08-13
-$log->info ( "Data: " . $data_importu );
+$log->info( "Data: " . $data_importu );
+
 patients_import ( $plik, $data_importu );
 
-$log->info ( "Stop!" );
+$log->info( "Stop!" );
