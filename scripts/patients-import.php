@@ -43,6 +43,7 @@ function get_typ() {
 			"UDARO" => "ZZ",
 			"UROL" => "ZZ",
 			"ZAKDO" => "ZZ",
+			"PATC" => "ZZ",
 			"SD" => "DIA",
 			"SDO" => "DIA"
 	);
@@ -77,6 +78,7 @@ function get_oddzialy_arr() {
 			"UDARO" => 3262,
 			"UROL" => 1667,
 			"ZAKDO" => 1657,
+			"PATC" => 37002,
 			"SD" => 37001,
 			"SDO" => 37001
 	);
@@ -162,6 +164,7 @@ function patients_import($plik, $data_importu) {
 			'PSYCH',
 			'NEF',
 			'POLOZ',
+			'PATC',
 			'SD',
 			'SDO'
 	);
