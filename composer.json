@@ -32,7 +32,6 @@
 		}
 	],
 	"scripts": {
-        "db" : "vendor/bin/doctrine orm:schema-tool:update --force --dump-sql",
         "test": "phpunit --bootstrap vendor/autoload.php --coverage-clover build/logs/clover.xml"
 	}
 }
