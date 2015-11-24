@@ -148,6 +148,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
         $patient->setOddzialId(123);
         $patient->setKategoriaPacjenta(1);
         $patient->setNumerHistorii("123");
+        $patient->setUser(0);
         $this->entityManager->persist($patient);
         $this->entityManager->flush();
         $this->assertTrue($patient->getId() > 0);
@@ -176,6 +177,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
         $patient->setOddzialId(1);
         $patient->setKategoriaPacjenta(1);
         $patient->setNumerHistorii("123");
+        $patient->setUser(0);
         $this->entityManager->persist($patient);
         $this->entityManager->flush();
         $patient2 = $this->entityManager->getRepository('Hospitalplugin\Entities\Patient')->findOneBy(array(
