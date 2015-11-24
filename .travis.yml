@@ -5,8 +5,7 @@ before_script:
   - mysqladmin create wordpress_test --user=root
   - cp resources/.env ~
   - composer install
-  # db moved to hospitaplugin
-  # - composer db
+  - composer db
   - mkdir -p build/logs
 script:
   - composer test
