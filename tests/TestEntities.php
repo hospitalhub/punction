@@ -148,6 +148,7 @@ class TestEntities extends PHPUnit_Framework_TestCase
         $patient->setOddzialId(123);
         $patient->setKategoriaPacjenta(1);
         $patient->setNumerHistorii("123");
+        $patient->setUser(0);
         $this->entityManager->persist($patient);
         $this->entityManager->flush();
         $this->assertTrue($patient->getId() > 0);
@@ -171,12 +172,19 @@ class TestEntities extends PHPUnit_Framework_TestCase
 
     function testDBLoad2()
     {
-        $patient = new Patient(0);
-        $patient = $this->entityManager->getRepository('Hospitalplugin\Entities\Patient')->findOneBy(array(
+        $patient = TestEntities::getRandomPatient();
+        $patient->setDataKategoryzacji(new \DateTime("now"));
+        $patient->setOddzialId(1);
+        $patient->setKategoriaPacjenta(1);
+        $patient->setNumerHistorii("123");
+        $patient->setUser(0);
+        $this->entityManager->persist($patient);
+        $this->entityManager->flush();
+        $patient2 = $this->entityManager->getRepository('Hospitalplugin\Entities\Patient')->findOneBy(array(
             'numerHistorii' => "123"
         ));
-        $this->assertTrue($patient->getId() > 0);
-        $this->assertTrue(strlen($patient->getName()) > 0);
+        $this->assertTrue($patient2->getId() > 0);
+        $this->assertTrue(strlen($patient2->getName()) > 0);
     }
 
     function testDBLoad3()
