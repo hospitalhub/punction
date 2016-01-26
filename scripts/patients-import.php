@@ -19,6 +19,7 @@ function get_typ() {
 			"CH3" => "ZZ",
 			"CHIDZ" => "PED",
 			"CHORDZ" => "PED",
+			"GAST" => "ZZ",
 			"GASTD" => "PED",
 			"GINEK" => "ZZ",
 			"INT1" => "ZZ",
@@ -43,6 +44,7 @@ function get_typ() {
 			"UDARO" => "ZZ",
 			"UROL" => "ZZ",
 			"ZAKDO" => "ZZ",
+			"PATC" => "ZZ",
 			"SD" => "DIA",
 			"SDO" => "DIA"
 	);
@@ -54,6 +56,7 @@ function get_oddzialy_arr() {
 			"CHIDZ" => 1645,
 			"CHORDZ" => 1649,
 			"GASTD" => 1652,
+			"GAST" => 37003,
 			"GINEK" => 5190,
 			"INT1" => 1650,
 			"INT2" => 1651,
@@ -77,6 +80,7 @@ function get_oddzialy_arr() {
 			"UDARO" => 3262,
 			"UROL" => 1667,
 			"ZAKDO" => 1657,
+			"PATC" => 37002,
 			"SD" => 37001,
 			"SDO" => 37001
 	);
@@ -159,9 +163,11 @@ function patients_import($plik, $data_importu) {
 			'CHORDZ',
 			'CHIDZ',
 			'GASTD',
+			'GAST',
 			'PSYCH',
 			'NEF',
 			'POLOZ',
+			'PATC',
 			'SD',
 			'SDO'
 	);
